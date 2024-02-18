@@ -1,0 +1,68 @@
+.drfault {
+  --font-Roboto: "Roboto", sans-serif;
+  --containerPadding: 0 6.613756613756613vw;
+  --containerMarginTop: 9.920634920634921vw;
+  --backgroundContainerPadding: 6.510416666666667vw 9.765625vw;
+  --mobileContainerMarginTop: 16vw;
+  --mobileContainerPadding: 0 6.4vw;
+  --mobileBackgroundContainerPadding: 10.666666666666668vw 6.4vw;
+  --borderRadius: 0.6613756613756614vw;
+  --mobileBorderRadius: 2.666666666666667vw;
+  --margin100: 6.613756613756613vw;
+  --margin20: 1.3227513227513228vw;
+  --margin30: 1.984126984126984vw;
+}
+
+.container1 {
+  position: relative;
+  padding: var(--containerPadding);
+  margin-top: var(--margin100);
+}
+
+.container1 h1 {
+  width: 66.86507936507937vw;
+  position: relative;
+  height: 17.857142857142858vw;
+}
+
+.container1 span {
+  position: absolute;
+  left: -0.06613756613756613vw;
+  opacity: 0;
+  transition: all .25s ease-in;
+}
+
+.container1 .actived {
+  opacity: 1;
+  transition: all .25s ease-in 0.25s;
+}
+
+.container1 p {
+  margin: var(--margin20) 0 var(--margin30) 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .container1 {
+    margin-top: 21.333333333333336vw;
+  }
+
+  .heroImage {
+    height: 146.66666666666666vw;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .contentContainer {
+    width: 100%;
+    padding: var(--mobileContainerPadding);
+  }
+
+  .contentContainer p {
+    width: 87.2vw !important;
+  }
+
+  .btnImage {
+    width: 21.333333333333336vw;
+    height: 21.333333333333336vw;
+  }
+}
