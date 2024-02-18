@@ -16,51 +16,48 @@ const Container6 = () => {
   const [scales, setScales] = useState([]);
   const cardRefs = useRef([]);
 
-//   useEffect(() => {
-//     // Initialize refs and scales based on the number of cards
-//     cardRefs.current = Array.from({ length: cardData.length }, (_, index) =>
-//       React.createRef()
-//     );
-//     setScales(Array.from({ length: cardData.length }, () => 1));
-//   }, [cardData.length]);
+  useEffect(() => {
+    // Initialize refs and scales based on the number of cards
+    cardRefs.current = Array.from({ length: cardData.length }, (_, index) =>
+      React.createRef()
+    );
+    setScales(Array.from({ length: cardData.length }, () => 1));
+  }, [cardData.length]);
 
-//   const isElementInViewport = (el) => {
-//     const rect = el.getBoundingClientRect();
-//     return (
-//       rect.top >= 0 &&
-//       rect.left >= 0 &&
-//       rect.bottom <=
-//         (window.innerHeight || document.documentElement.clientHeight) &&
-//       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//     );
-//   };
+  const isElementInViewport = (el) => {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  };
 
-//   const handleScroll = () => {
-//     cardRefs.current.forEach((cardRef, index) => {
-//       if (cardRef.current && isElementInViewport(cardRef.current)) {
-//         const { top, bottom } = cardRef.current.getBoundingClientRect();
-//         // console.log(bottom,"pop")
+  const handleScroll = () => {
+    cardRefs.current.forEach((cardRef, index) => {
+      if (cardRef.current) {
+        const isInViewport = isElementInViewport(cardRef.current);
+  
+        setScales((prevScales) => {
+          const newScales = [...prevScales];
+          
+          // If the card is in the viewport, set scale to 1.1, otherwise set it to 1
+          newScales[index] = isInViewport ? 1.1 : 1;
+          
+          return newScales;
+        });
+      }
+    });
+  };
 
-//         console.log(`Card ${index} top:`, top, "bottom:", bottom);
-
-//         // Adjust scale based on top and bottom values
-//         // For example, if top is less than 100, set scale to 1.08, otherwise set it to 1
-//         setScales((prevScales) => {
-//           const newScales = [...prevScales];
-//           if(top < 100){}
-//           newScales[index] = top < 100 ? 1.1 : 1;
-//           return newScales;
-//         });
-//       }
-//     });
-//   };
-
-//   useEffect(() => {
-//     window.addEventListener("scroll", handleScroll);
-//     return () => {
-//       window.removeEventListener("scroll", handleScroll);
-//     };
-//   }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className={styles.container}>
       <div className={styles.left}>
