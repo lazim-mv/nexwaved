@@ -40,6 +40,7 @@ const Container2 = () => {
           bg="transparent"
           color="#fff"
           margin="1.5873015873015872vw 0 0 0"
+          arrow={true}
         />
       </div>
 

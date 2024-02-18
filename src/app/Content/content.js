@@ -252,6 +252,7 @@ const container6Data = {
 const container7Data = {
   sectionName: "BLOG",
   sectionTitle: "Our Insights",
+  btnText:"All Blog",
   cardData: [
     {
       img: "/Container7/1.png",

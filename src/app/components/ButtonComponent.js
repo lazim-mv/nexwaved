@@ -13,11 +13,11 @@ const BtnComponent = ({
   arrowColor,
   height,
   header,
-  contact
+  contact,
 }) => {
   return (
     <div
-      className={`btnContainer ${contact ? "new": ""}`}
+      className={`btnContainer ${contact ? "new" : ""}`}
       style={{
         border: "0.06613756613756613vw solid " + borderColor,
         background: bg,
@@ -28,19 +28,23 @@ const BtnComponent = ({
       }}
     >
       <h5>{buttonText}</h5>
-      <Image
-        className="arrow"
-        src="/arrow.svg"
-        alt="Asian Engineer"
-        width={100}
-        height={100}
-        quality={100}
-        priority={true}
-        unoptimized
-        //   style={{
-        //     filter: arrowColor ? "brightness(1000%)" : "",
-        //   }}
-      />
+      {!arrow ? (
+        <Image
+          className="arrow"
+          src="/arrow.svg"
+          alt="Asian Engineer"
+          width={100}
+          height={100}
+          quality={100}
+          priority={true}
+          unoptimized
+          //   style={{
+          //     filter: arrowColor ? "brightness(1000%)" : "",
+          //   }}
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 };
@@ -54,7 +58,7 @@ const SectionName = ({ sectionText, width, textAllign }) => {
         textAlign: textAllign,
         textTransform: "uppercase",
         width: width,
-        borderBottom: "0.06613756613756613vw solid rgba(255, 255, 255, 0.6)"
+        borderBottom: "0.06613756613756613vw solid rgba(255, 255, 255, 0.6)",
       }}
     >
       {sectionText}

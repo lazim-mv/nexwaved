@@ -37,6 +37,12 @@
   margin: 9.920634920634921vw 0 7.936507936507936vw 0;
 }
 
+.tittle{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5873015873015872vw;
+}
+
 .cards {
   margin-top: var(--margin70);
   display: flex;
@@ -47,10 +53,22 @@
   width: 27.579365079365083vw;
 }
 
-.blogImage {
+.imgContainer {
   width: 27.579365079365083vw;
   height: 23.14814814814815vw;
   margin-bottom: var(--margin20);
+  overflow: hidden;
+}
+
+.blogImage {
+  width: 100%;
+  height: 100%;
+  transition: all .4s ease-in;
+}
+
+.card:hover .blogImage {
+  scale: 1.08;
+  transition: all .4s ease-in;
 }
 
 .card h6 {
@@ -74,7 +92,7 @@
 }
 
 .card a::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   border-bottom: 0.06613756613756613vw solid rgba(255, 255, 255, 0.6);

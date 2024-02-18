@@ -54,7 +54,7 @@ const Container6 = () => {
   
         setScales((prevScales) => {
           const newScales = [...prevScales];
-          newScales[index] = isInViewport ? 1.1 : 1;
+          newScales[index] = isInViewport ? 1.08 : 1;
           return newScales;
         });
       }

@@ -16,6 +16,7 @@ const Container5 = () => {
           borderColor="rgba(255, 255, 255, 0.6)"
           bg="transparent"
           color="#fff"
+          arrow={true}
         />
       </div>
       <div className={styles.cards}>
@@ -39,6 +40,7 @@ const Container5 = () => {
                 color="#fff"
                 width="8.862433862433862vw"
                 height="2.976190476190476vw"
+                arrow={true}
               />
             </div>
           </div>
