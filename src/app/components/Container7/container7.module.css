@@ -127,6 +127,7 @@
   .container {
     padding: var(--mobileContainerPadding);
     margin: 16vw 0;
+    padding-right: 0;
   }
 
   .tittle {
