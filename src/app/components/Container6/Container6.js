@@ -50,11 +50,11 @@ const Container6 = () => {
         // console.log(`Card ${index} dimensions:`, rect);
   
         const isInViewport = isElementInViewport(cardRef.current);
-        // console.log(`Card ${index} isInViewport:`, isInViewport);
+        console.log(`Card ${index} isInViewport:`, isInViewport);
   
         setScales((prevScales) => {
           const newScales = [...prevScales];
-          newScales[index] = isInViewport ? 1.05 : 1;
+          newScales[index] = isInViewport ? 1.1 : 1;
           return newScales;
         });
       }
