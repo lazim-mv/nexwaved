@@ -9,8 +9,6 @@ import {
   SectionTitle,
 } from "../ButtonComponent";
 
-
-
 const Container4 = () => {
   return (
     <div className={styles.container}>
@@ -25,6 +23,7 @@ const Container4 = () => {
         <SectionDescription
           sectionText="Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed. tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed."
           padding="1.984126984126984vw"
+          width="35.550925925925924vw"
         />
         <BtnComponent
           buttonText="Know More"
