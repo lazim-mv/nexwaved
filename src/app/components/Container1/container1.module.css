@@ -22,6 +22,9 @@
   --font24: 1.5873015873015872vw;
   --lineHeight18: 1.6666666666666667vw;
   --lineHeight24: 2.2222222222222223vw;
+  --mfont16: 4.266666666666667vw;
+  --mlineHeight16: 5.973333333333334vw;
+  --mletterSpace16: 0.021164021164021166vw;
 }
 
 .container {
@@ -29,7 +32,7 @@
   margin-top: var(--containerMarginTop);
 }
 
-.container p{
+.container p {
   font-size: var(--font24);
   line-height: var(--lineHeight24);
 }
@@ -37,4 +40,22 @@
 .aboutImg {
   width: 100%;
   height: 39.682539682539684vw;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: var(--mobileContainerPadding);
+    margin-top: var(--mobileContainerMarginTop);
+  }
+
+  .container p {
+    font-size: var(--mfont16);
+    line-height: var(--mlineHeight16);
+    width: auto !important;
+  }
+
+  .container p:nth-child(1){
+    margin: 5.333333333333334vw 0 0 0 !important;
+  }
+
 }

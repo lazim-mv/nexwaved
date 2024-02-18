@@ -5,7 +5,7 @@ const heroData = {
     "Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.",
   texts: [
     "scale businesses",
-    "transform experiences",
+    "transform lives",
     "drive innovation",
     "deliver impact",
   ],
@@ -180,8 +180,8 @@ const container3Data = {
 };
 
 const container5Data = {
-  sectionName: "Testimonials",
-  sectionTitle: "Giving Us The Best Review",
+  sectionName: "OUR WORK",
+  sectionTitle: "Selected Work",
   btnText: "All Work",
   cardData: [
     {
@@ -208,8 +208,8 @@ const container5Data = {
 };
 
 const container6Data = {
-  sectionName: "Services",
-  sectionTitle: "Our Capabilities",
+  sectionName: "Process",
+  sectionTitle: "Our 5 - Step Process & Approach",
   cardData: [
     {
       number: "01",
@@ -219,28 +219,28 @@ const container6Data = {
         "Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.",
     },
     {
-      number: "01",
+      number: "02",
       img: "/Container6/2.png",
       cardHeading: "Digital Strategy",
       description:
         "Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.",
     },
     {
-      number: "01",
+      number: "03",
       img: "/Container6/3.png",
       cardHeading: "Digital Strategy",
       description:
         "Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.",
     },
     {
-      number: "01",
+      number: "04",
       img: "/Container6/4.png",
       cardHeading: "Digital Strategy",
       description:
         "Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.",
     },
     {
-      number: "01",
+      number: "05",
       img: "/Container6/5.png",
       cardHeading: "Digital Strategy",
       description:
@@ -252,7 +252,7 @@ const container6Data = {
 const container7Data = {
   sectionName: "BLOG",
   sectionTitle: "Our Insights",
-  btnText:"All Blog",
+  btnText: "All Blog",
   cardData: [
     {
       img: "/Container7/1.png",

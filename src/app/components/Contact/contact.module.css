@@ -30,6 +30,20 @@
   --letterSpace18: 0.023809523809523808vw;
   --letterSpace24: 0.015873015873015872vw;
   --letterSpace28: 0.03703703703703704vw;
+  --mfont16: 4.266666666666667vw;
+  --mlineHeight16: 5.973333333333334vw;
+  --mletterSpace16: 0.08533333333333333vw;
+
+  --mfont12: 3.2vw;
+  --mlineHeight12: 4.4799999999999995vw;
+  --mletterSpace12: 0.4266666666666667vw;
+  --mfont14: 3.733333333333334vw;
+  --mlineHeight14: 5.226666666666667vw;
+  --mletterSpace14: 0.4266666666666667vw;
+
+  --mfont18: 4.8vw;
+  --mlineHeight18: 5.624vw;
+  --mletterSpace18: 0.4266666666666667vw;
 }
 
 .container {
@@ -46,21 +60,57 @@
   padding: 6.613756613756613vw 0 6.613756613756613vw 6.613756613756613vw;
 }
 
-.innerContainer h6{
-    font-size: var(--font18);
-    line-height: var(--lineHeight18);
-    letter-spacing: var(--letterSpace18);
+.innerContainer h6 {
+  font-size: var(--font18);
+  line-height: var(--lineHeight18);
+  letter-spacing: var(--letterSpace18);
+  color: #fff;
+  font-weight: 400;
+}
+
+.title {
+  width: 49.074074074074076vw;
+}
+
+.title h1 {
+  font-size: 4.232804232804233vw;
+  line-height: 4.9603174603174605vw;
+  letter-spacing: 0.04232804232804233vw;
+  margin-bottom: var(--margin30);
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    margin: var(--mobileContainerMarginTop) 0;
+    padding: var(--mobileContainerPadding);
+  }
+
+  .innerContainer {
+    background-color: #2b61f7;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    padding: 10.666666666666668vw 5.333333333333334vw;
+  }
+
+  .innerContainer h6 {
+    font-size: var(--mfont12);
+    line-height: var(--mlineHeight12);
+    letter-spacing: var(--mletterSpace12);
     color: #fff;
     font-weight: 400;
-}
-
-.title{
-    width: 49.074074074074076vw;
-}
-
-.title h1{
-    font-size: 4.232804232804233vw;
-    line-height: 4.9603174603174605vw;
-    letter-spacing: 0.04232804232804233vw;
-    margin-bottom: var(--margin30);
+    margin-bottom: 5.333333333333334vw;
+  }
+  
+  .title {
+    width: auto;
+  }
+  
+  .title h1 {
+    font-size: 7.466666666666668vw;
+    line-height: 8.749333333333334vw;
+    letter-spacing: 0.4266666666666667vw;
+    margin-bottom: 5.333333333333334vw;
+  }
 }

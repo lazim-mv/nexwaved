@@ -30,8 +30,21 @@
   --letterSpace18: 0.023809523809523808vw;
   --letterSpace24: 0.015873015873015872vw;
   --letterSpace28: 0.03703703703703704vw;
-}
+  --mfont16: 4.266666666666667vw;
+  --mlineHeight16: 5.973333333333334vw;
+  --mletterSpace16: 0.08533333333333333vw;
 
+  --mfont12: 3.2vw;
+  --mlineHeight12: 4.4799999999999995vw;
+  --mletterSpace12: 0.4266666666666667vw;
+  --mfont14: 3.733333333333334vw;
+  --mlineHeight14: 5.226666666666667vw;
+  --mletterSpace14: 0.4266666666666667vw;
+
+  --mfont18:4.8vw;
+  --mlineHeight18:5.624vw;
+  --mletterSpace18:0.4266666666666667vw;
+}
 .container {
   padding: var(--containerPadding);
   margin: var(--containerMarginTop) 0;
@@ -70,14 +83,14 @@
   object-position: center;
   scale: 1;
   /* transform: translateY(0%); */
-  transition: all 0.4s ease-out ;
+  transition: all 0.4s ease-out;
 }
 
 .card:hover .container5Img img {
   scale: 1.08;
   /* transform: translateY(-5%); */
   object-position: bottom;
-  transition: all 0.4s ease-in ;
+  transition: all 0.4s ease-in;
 }
 
 .cardHeadingAndButton {
@@ -92,4 +105,46 @@
   letter-spacing: var(--letterSpace24pervent2);
   color: #fff;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: var(--mobileContainerPadding);
+    margin: var(--mobileContainerMarginTop) 0;
+  }
+
+  .tittle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5.333333333333334vw;
+    margin-top: 8vw;
+  }
+
+  .card {
+    width: auto;
+    cursor: pointer;
+  }
+
+  .container5Img {
+    width: auto;
+    height: 54.84266666666666vw;
+    margin-bottom: 4vw;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cardHeadingAndButton h6 {
+    font-size: var(--mfont18);
+    line-height: var(--mlineHeight18);
+    letter-spacing: var(--mletterSpace18);
+    color: #fff;
+    font-weight: 400;
+  }
 }

@@ -1,23 +1,27 @@
+"use client"
 import React from "react";
 import styles from "./container5.module.css";
 import { BtnComponent, SectionName, SectionTitle } from "../ButtonComponent";
 import { container5Data } from "@/app/Content/content";
 import Image from "next/image";
+import { useWindowSize } from "@/app/utils/windowSize";
 
 const Container5 = () => {
   const cardData = container5Data.cardData;
+  const { windowSize, isSmallScreen } = useWindowSize();
+
   return (
     <div className={styles.container}>
       <SectionName sectionText={container5Data.sectionName} />
       <div className={styles.tittle}>
         <SectionTitle sectionText={container5Data.sectionTitle} />
-        <BtnComponent
+        {!isSmallScreen && <BtnComponent
           buttonText={container5Data.btnText}
           borderColor="rgba(255, 255, 255, 0.6)"
           bg="transparent"
           color="#fff"
           arrow={true}
-        />
+        />}
       </div>
       <div className={styles.cards}>
         {cardData.map((data, index) => (
@@ -38,7 +42,7 @@ const Container5 = () => {
                 borderColor="rgba(255, 255, 255, 0.6)"
                 bg="transparent"
                 color="#fff"
-                width="8.862433862433862vw"
+                width={isSmallScreen ? "29.333333333333332vw" : "8.862433862433862vw"}
                 height="2.976190476190476vw"
                 arrow={true}
               />

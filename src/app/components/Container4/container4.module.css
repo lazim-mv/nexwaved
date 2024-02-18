@@ -30,6 +30,17 @@
   --letterSpace18: 0.023809523809523808vw;
   --letterSpace24: 0.015873015873015872vw;
   --letterSpace28: 0.03703703703703704vw;
+  --mfont16: 4.266666666666667vw;
+  --mlineHeight16: 5.973333333333334vw;
+  --mletterSpace16: 0.08533333333333333vw;
+
+  --mfont12: 3.2vw;
+  --mlineHeight12: 4.4799999999999995vw;
+  --mletterSpace12: 0.4266666666666667vw;
+
+  --mfont14:3.733333333333334vw;
+  --mlineHeight14:5.226666666666667vw;
+  --mletterSpace14:0.4266666666666667vw;
 }
 
 .container {
@@ -48,15 +59,13 @@
   height: 45vw;
   border-radius: 45vw;
   overflow: hidden;
-  position: relative;
-  z-index: 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.splineObject canvas{
-    object-fit: cover;
+.splineObject canvas {
+  object-fit: cover;
 }
 
 .content {
@@ -69,4 +78,38 @@
   font-size: var(--font18);
   line-height: var(--lineHeight18);
   letter-spacing: var(--letterSpace18);
+}
+
+@media only screen and (max-width: 767px) {
+  .container{
+    padding: 10.666666666666668vw 6.4vw;
+    flex-direction: column;
+    gap: 8vw;
+  }
+
+  .splineObject{
+    width: 87.2vw;
+    height: 87.2vw;
+  }
+
+  .content {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    order: -1;
+  }
+
+  .content h2{
+    text-align: left;
+    margin-bottom: 4vw;
+    padding: 0 !important;
+  }
+  
+  .content p {
+    font-size: var(--mfont14);
+    line-height: var(--mlineHeight14);
+    letter-spacing: var(--mletterSpace14);
+    width: auto !important;
+    padding-bottom: 5.333333333333334vw !important;
+  }
 }

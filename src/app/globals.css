@@ -32,6 +32,20 @@
   --letterSpace18: 0.023809523809523808vw;
   --letterSpace24: 0.015873015873015872vw;
   --letterSpace28: 0.03703703703703704vw;
+  --mfont16: 4.266666666666667vw;
+  --mlineHeight16: 5.973333333333334vw;
+  --mletterSpace16: 0.08533333333333333vw;
+
+  --mfont12:3.2vw;
+  --mlineHeight12: 4.4799999999999995vw;
+  --mletterSpace12: 0.4266666666666667vw;
+  --mfont14:3.733333333333334vw;
+  --mlineHeight14:5.226666666666667vw;
+  --mletterSpace14:0.4266666666666667vw;
+
+  --mfont18:4.8vw;
+  --mlineHeight18:5.624vw;
+  --mletterSpace18:0.4266666666666667vw;
 }
 
 * {
@@ -141,12 +155,12 @@ a {
 }
 
 .active h4 {
-  color: #96202a;
+  color: #2b61f7;
   font-weight: 400;
 }
 
 .active {
-  color: #96202a;
+  color: #2b61f7;
   font-weight: 400;
 }
 
@@ -245,62 +259,57 @@ a {
 @media only screen and (max-width: 767px) {
   h1 {
     font-size: 8.533333333333333vw;
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 0.021164021164021166vw;
     line-height: 10.239999999999998vw;
-    color: #02040e;
-    font-family: var(--font-Jakarta);
+    color: #fff;
     text-transform: capitalize;
   }
 
   h2 {
-    font-size: 6.4vw;
-    font-weight: 600;
-    line-height: 7.680000000000001vw;
-    color: #02040e;
-    font-family: var(--font-Jakarta);
+    font-size: 7.466666666666668vw;
+    font-weight: 400;
+    line-height: 8.749333333333334vw;
+    color: #fff;
     text-transform: capitalize;
     padding: 0 !important;
     margin: 0;
     text-align: center;
-    margin-bottom: 8vw;
   }
 
   h3 {
-    font-size: 4.8vw;
-    font-weight: 600;
-    line-height: 5.973333333333334vw;
-    color: #02040e;
-    font-family: var(--font-Jakarta);
+    font-size: 5.333333333333334vw;
+    font-weight: 400;
+    line-height: 6.250666666666667vw;
+    color: #fff;
     text-transform: capitalize;
+    letter-spacing: 0.4266666666666667vw;
   }
 
   h4 {
     font-size: 3.2vw;
     font-weight: 400;
     line-height: 3.8400000000000003vw;
-    color: #02040e;
-    font-family: var(--font-Jakarta);
+    color: #fff;
     text-transform: capitalize;
-    padding: 1.3333333333333335vw 5.333333333333334vw !important;
-    margin-bottom: 2.666666666666667vw;
+    padding: 0 0 2.666666666666667vw !important;
+    margin-bottom: 4vw;
   }
 
   h5 {
     font-size: 3.2vw;
     font-weight: 400;
     line-height: 3.8400000000000003vw;
-    color: #02040e;
-    font-family: var(--font-Jakarta);
+    color: #fff;
     text-transform: capitalize;
-    padding: 1.3333333333333335vw 5.333333333333334vw !important;
-    margin-bottom: 2.666666666666667vw;
+    /* padding: 1.3333333333333335vw 5.333333333333334vw !important; */
+    /* margin-bottom: 2.666666666666667vw; */
   }
 
   p {
     font-size: 3.2vw;
     font-weight: 400;
     line-height: 4.4799999999999995vw;
-    font-family: var(--font-Jakarta);
     font-feature-settings: "liga" 0;
   }
 
@@ -309,7 +318,6 @@ a {
     font-weight: 400;
     line-height: 5.973333333333334vw;
     color: rgba(255, 255, 255, 0.8);
-    font-family: var(--font-Jakarta);
     font-feature-settings: "liga" 0;
   }
 
@@ -322,24 +330,24 @@ a {
     font-size: 3.733333333333334vw;
     font-weight: 400;
     line-height: 5.226666666666667vw;
-    font-family: var(--font-Jakarta);
     font-feature-settings: "liga" 0;
     margin-right: 1.3333333333333335vw !important;
   }
 
-  .rightArrow {
-    width: 3.3333333333333335vw !important;
-    height: 2.666666666666667vw !important;
+  .btnContainer {
+    width: 34.66666666666667vw ;
+    height: 9.866666666666667vw !important;
+    border-radius: 9.866666666666667vw;
+    gap: 2.666666666666667vw;
+  }
+
+  .arrow {
+    width: 2.666666666666667vw;
+    height: 2.666666666666667vw;
   }
 
   .callIcon {
     width: 4vw !important;
     height: 3.5vw !important;
-  }
-
-  .btnContainer {
-    width: 40vw !important;
-    height: 10.666666666666668vw !important;
-    border-radius: 13.333333333333334vw;
   }
 }

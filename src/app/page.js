@@ -18,12 +18,14 @@ import Container7 from "./components/Container7/Container7";
 import Footer from "./components/Footer/Footer";
 import Test from "./components/Spline/Test";
 import Container4 from "./components/Container4/Container4";
+import MobileHeader from "./components/MobileHeader/MobileHeader";
 // import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <MobileHeader />
       <Hero />
       <Container1 />
       <Container2 />

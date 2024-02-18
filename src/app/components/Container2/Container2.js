@@ -10,9 +10,12 @@ import {
   SectionName,
   SectionTitle,
 } from "../ButtonComponent";
+import { useWindowSize } from "@/app/utils/windowSize";
 
 const Container2 = () => {
   const cardData = container2Data.cardData;
+
+  const { windowSize, isSmallScreen } = useWindowSize();
 
   const initialVisibleState = Array(cardData.length).fill(false);
   initialVisibleState[0] = true;
@@ -34,14 +37,16 @@ const Container2 = () => {
           sectionText={container2Data.sectionTitle}
           padding="1.5873015873015872vw 0 0 0"
         />
-        <BtnComponent
-          buttonText={container2Data.btnText}
-          borderColor="rgba(255, 255, 255, 0.6)"
-          bg="transparent"
-          color="#fff"
-          margin="1.5873015873015872vw 0 0 0"
-          arrow={true}
-        />
+        {!isSmallScreen && (
+          <BtnComponent
+            buttonText={container2Data.btnText}
+            borderColor="rgba(255, 255, 255, 0.6)"
+            bg="transparent"
+            color="#fff"
+            margin="1.5873015873015872vw 0 0 0"
+            arrow={true}
+          />
+        )}
       </div>
 
       <div className={styles.container1}>
@@ -92,6 +97,16 @@ const Container2 = () => {
           className={styles.serviceImg}
         />
       </div>
+      {isSmallScreen && (
+        <BtnComponent
+          buttonText={container2Data.btnText}
+          borderColor="rgba(255, 255, 255, 0.6)"
+          bg="transparent"
+          color="#fff"
+          margin="8vw auto 0 auto"
+          arrow={true}
+        />
+      )}
     </div>
   );
 };

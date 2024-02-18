@@ -1,10 +1,14 @@
+"use client"
 import React from "react";
 import styles from "./container1.module.css";
 import Image from "next/image";
 import { container1Data } from "@/app/Content/content";
 import { BtnComponent, SectionDescription } from "../ButtonComponent";
+import { useWindowSize } from "@/app/utils/windowSize";
 
 const Container1 = () => {
+  const { windowSize, isSmallScreen } = useWindowSize();
+
   return (
     <div className={styles.container}>
       <Image
@@ -30,7 +34,7 @@ const Container1 = () => {
         borderColor="rgba(255, 255, 255, 0.6)"
         bg="transparent"
         color="#fff"
-        margin=" 1.984126984126984vw 0 0 0"
+        margin={isSmallScreen ? "5.333333333333334vw 0 0 0": "1.984126984126984vw 0 0 0"}
       />
     </div>
   );

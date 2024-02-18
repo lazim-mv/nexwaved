@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { useWindowSize } from "../utils/windowSize";
 
 const BtnComponent = ({
   borderColor,
@@ -15,6 +17,8 @@ const BtnComponent = ({
   header,
   contact,
 }) => {
+  const { windowSize, isSmallScreen } = useWindowSize();
+
   return (
     <div
       className={`btnContainer ${contact ? "new" : ""}`}
@@ -22,7 +26,11 @@ const BtnComponent = ({
         border: "0.06613756613756613vw solid " + borderColor,
         background: bg,
         color: color,
-        width: width ? width : "13.647486772486772vw",
+        width: width
+          ? width
+          : isSmallScreen
+          ? "34.66666666666667vw"
+          : "13.647486772486772vw",
         height: height ? height : "3.6375661375661372vw",
         margin: margin,
       }}

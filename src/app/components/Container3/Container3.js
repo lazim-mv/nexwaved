@@ -21,7 +21,7 @@ const Container3 = () => {
 
   const totalData = container3Data.cardData.length;
   const clicks = isSmallScreen ? totalData - 1 : totalData - 5;
-  const dynamicValue = isSmallScreen ? 62 : 100;
+  const dynamicValue = isSmallScreen ? 70 : 100;
 
   const nextImage = () => {
     if (currentIndex < clicks) {
@@ -53,10 +53,9 @@ const Container3 = () => {
         <SectionName sectionText={container3Data.sectionName} />
         <div className={styles.titleAndButton}>
           <SectionTitle sectionText={container3Data.sectionTitle} />
-          <ArrowButtons
-            prevImage={prevImage}
-            nextImage={nextImage}
-          />
+          {!isSmallScreen && (
+            <ArrowButtons prevImage={prevImage} nextImage={nextImage} />
+          )}
         </div>
       </div>
       <div className={styles.cards}>
@@ -90,6 +89,9 @@ const Container3 = () => {
           </div>
         ))}
       </div>
+      {isSmallScreen && (
+        <ArrowButtons prevImage={prevImage} nextImage={nextImage} />
+      )}
     </div>
   );
 };

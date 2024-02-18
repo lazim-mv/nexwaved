@@ -1,23 +1,28 @@
+"use client";
 import React from "react";
 import styles from "./container7.module.css";
 import { BtnComponent, SectionName, SectionTitle } from "../ButtonComponent";
 import { container7Data } from "@/app/Content/content";
 import Image from "next/image";
+import { useWindowSize } from "@/app/utils/windowSize";
 
 const Container7 = () => {
   const cardData = container7Data.cardData;
+  const { windowSize, isSmallScreen } = useWindowSize();
   return (
     <div className={styles.container}>
       <SectionName sectionText={container7Data.sectionName} />
       <div className={styles.tittle}>
         <SectionTitle sectionText={container7Data.sectionTitle} />
-        <BtnComponent
-          buttonText={container7Data.btnText}
-          borderColor="rgba(255, 255, 255, 0.6)"
-          bg="transparent"
-          color="#fff"
-          arrow={true}
-        />
+        {!isSmallScreen && (
+          <BtnComponent
+            buttonText={container7Data.btnText}
+            borderColor="rgba(255, 255, 255, 0.6)"
+            bg="transparent"
+            color="#fff"
+            arrow={true}
+          />
+        )}
       </div>
       <div className={styles.cards}>
         {cardData.map((data, index) => (
@@ -39,6 +44,16 @@ const Container7 = () => {
           </div>
         ))}
       </div>
+      {isSmallScreen && (
+        <BtnComponent
+          buttonText={container7Data.btnText}
+          borderColor="rgba(255, 255, 255, 0.6)"
+          bg="transparent"
+          color="#fff"
+          arrow={true}
+          margin="0 auto"
+        />
+      )}
     </div>
   );
 };

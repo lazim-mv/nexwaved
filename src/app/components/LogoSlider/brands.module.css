@@ -33,3 +33,26 @@
   height: 3.968253968253968vw !important;
   object-fit: cover;
 }
+
+@media only screen and (max-width: 767px) {
+  .clientsImgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 16vw;
+  }
+
+  .scrollingLogos {
+    display: flex;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+    gap: 8vw;
+  }
+
+  .scrollingLogos img {
+    height: 10.666666666666668vw!important;
+    object-fit: cover;
+  }
+}
