@@ -124,11 +124,11 @@ function MobileHeader() {
             ))}
 
             <a
-              href="tel:966 570 807 175"
+              href="/"
               style={{ display: isMenuOpen ? "block" : "none" }}
             >
               <BtnComponent
-                buttonText="+ 966 570 807 175"
+                buttonText="Get in Touch"
                 header={true}
                 bg="#2b61f7"
                 arrow={true}

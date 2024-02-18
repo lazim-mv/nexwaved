@@ -116,6 +116,10 @@
     width: 100%;
   }
 
+  .cards::-webkit-scrollbar{
+    width: 0;
+  }
+
   .card {
     width: 66.66666666666666vw;
   }

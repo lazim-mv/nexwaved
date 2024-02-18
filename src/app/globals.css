@@ -341,6 +341,11 @@ a {
     gap: 2.666666666666667vw;
   }
 
+  .btnContainer::before {
+    width: 95.068783vw;
+    height: 25.068783vw;
+  }
+
   .arrow {
     width: 2.666666666666667vw;
     height: 2.666666666666667vw;
