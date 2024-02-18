@@ -40,14 +40,17 @@
   align-items: center;
   height: 100%;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .splineObject {
   /* width: 100%; */
   /* height: 60.21825396825397vw; */
   height: 35.550925925925924vw;
-  border-radius: 35.550925925925924vw;
   overflow: hidden;
+  position: relative;
+  z-index: 0;
 }
 
 .content {
