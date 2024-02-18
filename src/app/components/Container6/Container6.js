@@ -26,11 +26,19 @@ const Container6 = () => {
 
   const isElementInViewport = (el) => {
     const rect = el.getBoundingClientRect();
+    
+    // console.log("Element dimensions:", rect);
+    // console.log("Viewport dimensions:", {
+    //   top: 0,
+    //   left: 0,
+    //   bottom: window.innerHeight || document.documentElement.clientHeight,
+    //   right: window.innerWidth || document.documentElement.clientWidth,
+    // });
+  
     return (
       rect.top >= 0 &&
       rect.left >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   };
@@ -38,14 +46,15 @@ const Container6 = () => {
   const handleScroll = () => {
     cardRefs.current.forEach((cardRef, index) => {
       if (cardRef.current) {
+        const rect = cardRef.current.getBoundingClientRect();
+        // console.log(`Card ${index} dimensions:`, rect);
+  
         const isInViewport = isElementInViewport(cardRef.current);
+        // console.log(`Card ${index} isInViewport:`, isInViewport);
   
         setScales((prevScales) => {
           const newScales = [...prevScales];
-          
-          // If the card is in the viewport, set scale to 1.1, otherwise set it to 1
-          newScales[index] = isInViewport ? 1.1 : 1;
-          
+          newScales[index] = isInViewport ? 1.05 : 1;
           return newScales;
         });
       }
