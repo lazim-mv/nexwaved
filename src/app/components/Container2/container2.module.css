@@ -73,7 +73,6 @@
 .descContainer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease;
   transition: all 0.3s ease;
 }
 
@@ -137,7 +136,6 @@
 
   .visible {
     max-height: 22.666666666666664vw;
-    max-height: none !important;
     margin-top: 2.666666666666667vw;
     transition: all 0.6s ease;
   }

@@ -79,6 +79,7 @@ const Container2 = () => {
                 className={`${styles.descContainer} ${
                   answerVisible[index] ? styles.visible : ""
                 }`}
+                // style={{ transition: "all 0.4s ease" }}
               >
                 <SectionDescription
                   sectionText={data.description}
