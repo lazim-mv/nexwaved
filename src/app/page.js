@@ -16,6 +16,8 @@ import Container5 from "./components/Container5/Container5";
 import Contact from "./components/Contact/Contact";
 import Container7 from "./components/Container7/Container7";
 import Footer from "./components/Footer/Footer";
+import Test from "./components/Spline/Test";
+import Container4 from "./components/Container4/Container4";
 // import styles from "./page.module.css";
 
 export default function Home() {
@@ -26,6 +28,7 @@ export default function Home() {
       <Container1 />
       <Container2 />
       <Container3 />
+      <Container4 />
       <Container5 />
       <Container6 />
       <Contact />
