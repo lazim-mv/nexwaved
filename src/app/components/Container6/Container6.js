@@ -108,9 +108,9 @@ const Container6 = () => {
                   height={0}
                   alt="ImageClients"
                   className={styles.image}
-                  initial={{ scale: 1 }}
-                  whileInView={{ scale: 1.2 }}
-                  transition={{ duration: 0.8, ease: "easeInOut"}}
+                  // initial={{ scale: 1 }}
+                  // whileInView={{ scale: 1.2 }}
+                  // transition={{ duration: 0.8, ease: "easeInOut"}}
                   // style={{
                   //   transform: `scale(${scales[index]})`,
                   //   transition: "all .8s ease",
