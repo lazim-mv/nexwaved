@@ -88,13 +88,12 @@
 @media only screen and (max-width: 767px) {
   .container {
     background-color: var(--bgColor);
-    padding: var(--containerPadding);
-    padding-top: 5.952380952380952vw;
+    padding: 10.666666666666668vw 6.4vw 0 6.4vw;
     width: 100vw;
     display: grid;
     gap: 8vw;
     grid-template-rows: 28.5vw 42.5vw 15.2vw;
-    grid-template-columns:40.6666666667vw 40.6666666667vw ;
+    grid-template-columns: 40.6666666667vw 40.6666666667vw;
   }
 
   .address {
@@ -103,9 +102,9 @@
 
   .heading {
     color: rgba(255, 255, 255, 0.6);
-    font-size: var(--font12);
-    line-height: var(--lineHeight12);
-    letter-spacing: var(--letterSpace12);
+    font-size: var(--mfont12);
+    line-height: var(--mlineHeight12);
+    letter-spacing: var(--mletterSpace12);
     font-weight: 400;
     margin-bottom: 4vw;
   }
@@ -113,6 +112,11 @@
   .text {
     color: rgba(255, 255, 255, 1);
     margin-bottom: 2.666666666666667vw;
+    font-size: var(--mfont14);
+    line-height: var(--mlineHeight14);
+    letter-spacing: var(--mletterSpace14);
+    font-weight: 400;
+
   }
 
   .bottom {
@@ -123,6 +127,14 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .bottom p{
+    font-size: var(--mfont12);
+    line-height: var(--mlineHeight12);
+    letter-spacing: var(--mletterSpace12);
+    text-align: center;
+    /* width: 100%; */
   }
 
   .footerLogo {

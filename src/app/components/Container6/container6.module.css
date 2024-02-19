@@ -74,9 +74,9 @@
 .card {
   padding: var(--gap50);
   background: var(--mainbgColor);
-  animation: fade-outt linear forwards;
+  /* animation: fade-outt linear forwards;
   animation-timeline: view();
-  animation-range: cover 75% cover 100%;
+  animation-range: cover 75% cover 100%; */
 }
 
 .imageContainer {

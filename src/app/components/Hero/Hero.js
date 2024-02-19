@@ -4,9 +4,15 @@ import styles from "./hero.module.css";
 import { BtnComponent, SectionDescription } from "../ButtonComponent";
 import { heroData } from "../../Content/content";
 import LogoSlider from "../LogoSlider/LogoSlider";
+import { useWindowSize } from "@/app/utils/windowSize";
+import New from "../LogoSlider/New";
 
 const Hero = () => {
   const brandLogos = heroData.brandLogos;
+
+  const repeatedImageSources = Array.from({ length: 100 }, () => [
+    ...brandLogos,
+  ]).flat();
 
   const texts = heroData.texts;
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -18,12 +24,13 @@ const Hero = () => {
 
     return () => clearInterval(interval);
   }, []);
+  const { windowSize, isSmallScreen } = useWindowSize();
 
   return (
     <>
       <div className={styles.container1}>
         <h1>
-         {heroData.sectionTitle} &nbsp;
+          {heroData.sectionTitle} &nbsp;
           {texts.map((data, index) => (
             <span
               key={index}
@@ -42,14 +49,16 @@ const Hero = () => {
           borderColor="rgba(255, 255, 255, 0.6)"
           bg="transparent"
           color="#fff"
+          width={isSmallScreen && "34.66666666666667vw"}
         />
       </div>
-      <LogoSlider
-        imageSources={brandLogos}
+      {/* <LogoSlider
+        imageSources={repeatedImageSources}
         initialAnimateValue="-160%"
-        hoverDuration="400"
-        duration="250"
-      />
+        hoverDuration="1700"
+        duration="800"
+      /> */}
+      <New />
     </>
   );
 };

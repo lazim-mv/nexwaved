@@ -30,7 +30,7 @@ const Container2 = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} `}>
       <SectionName sectionText={container2Data.sectionName} />
       <div className={styles.tittle}>
         <SectionTitle
@@ -49,55 +49,56 @@ const Container2 = () => {
         )}
       </div>
 
-      <div className={styles.container1}>
-        <div className={styles.cards}>
-          {cardData.map((data, index) => (
-            <div
-              className={styles.card}
-              key={index}
-              onClick={() => handleClick(index)}
-            >
-              <div className={styles.cardHeading}>
-                <CardHeading sectionText={data.cardHeading} />
-                <Image
-                  unoptimized
-                  src={container2Data.arrowImg}
-                  width={100}
-                  height={0}
-                  alt="ImageClients"
-                  className={styles.arrow}
-                  onClick={() => handleClick(index)}
-                  style={{
-                    transform: answerVisible[index]
-                      ? "rotate(180deg)"
-                      : "rotate(0deg)",
-                    transition: "transform .5s ease",
-                  }}
-                />
-              </div>
-              <div
-                className={`${styles.descContainer} ${
-                  answerVisible[index] ? styles.visible : ""
-                }`}
-                // style={{ transition: "all 0.4s ease" }}
-              >
-                <SectionDescription
-                  sectionText={data.description}
-                  width="49.338624338624335vw"
-                />
-              </div>
+      <div className={styles.cards}>
+        {cardData.map((data, index) => (
+          <div
+            className={styles.card}
+            key={index}
+            onClick={() => handleClick(index)}
+          >
+            <div className={styles.cardHeading}>
+              <CardHeading sectionText={data.cardHeading} />
+              <Image
+                unoptimized
+                src={container2Data.arrowImg}
+                width={100}
+                height={0}
+                alt="ImageClients"
+                className={styles.arrow}
+                onClick={() => handleClick(index)}
+                style={{
+                  transform: answerVisible[index]
+                    ? "rotate(180deg)"
+                    : "rotate(0deg)",
+                  transition: "transform .5s ease",
+                }}
+              />
             </div>
-          ))}
-        </div>
-        <Image
-          unoptimized
-          src={container2Data.img}
-          width={100}
-          height={0}
-          alt="ImageClients"
-          className={styles.serviceImg}
-        />
+            <div
+              className={`${styles.descContainer} ${
+                answerVisible[index] ? styles.visible : ""
+              }`}
+              // style={{ transition: "all 0.4s ease" }}
+            >
+              <SectionDescription
+                sectionText={data.description}
+                width="49.338624338624335vw"
+              />
+            </div>
+            {answerVisible[index] && (
+              <Image
+                unoptimized
+                src={data.img}
+                width={100}
+                height={0}
+                alt="ImageClients"
+                className={styles.serviceImg}
+              />
+            )}
+          </div>
+        ))}
       </div>
+
       {isSmallScreen && (
         <BtnComponent
           buttonText={container2Data.btnText}

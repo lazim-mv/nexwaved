@@ -53,6 +53,10 @@
   white-space: nowrap;
 }
 
+.hUlList a:hover{
+  color: rgba(255, 255, 255,0.4);
+}
+
 .hUlList li {
   cursor: pointer;
 }

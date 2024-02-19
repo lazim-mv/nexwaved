@@ -41,16 +41,12 @@
   /* align-items: center; */
 }
 
-.container1 {
-  display: flex;
-  margin-top: var(--margin70);
-  gap: var(--gap40);
-}
-
 .cards {
   display: flex;
   flex-direction: column;
+  margin-top: var(--margin70);
   gap: var(--gap20);
+  position: relative;
 }
 
 .card {
@@ -94,8 +90,12 @@
 }
 
 .serviceImg {
+  position: absolute;
   width: 27.18253968253968vw;
   height: 29.761904761904763vw;
+  right: 0;
+  top: 0;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 767px) {
@@ -148,8 +148,9 @@
   }
 
   .serviceImg {
-    width: 87.2vw;
+    width: 79.2vw;
     height: 86.74400000000001vw;
-    margin-bottom: 8vw;
+    margin-top: 4vw;
+    position: relative;
   }
 }

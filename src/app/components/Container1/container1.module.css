@@ -58,4 +58,9 @@
     margin: 5.333333333333334vw 0 0 0 !important;
   }
 
+  .aboutImg{
+    height: 106.66666666666667vw;
+    object-fit: cover;
+  }
+
 }

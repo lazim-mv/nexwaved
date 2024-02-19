@@ -50,8 +50,7 @@ function Header() {
                         : ""
                     }`}
                   >
-                    <div className={styles.listHoverTop}>{item.text}</div>
-                    <div className={styles.listHoverBottom}>{item.text}</div>
+                    <div>{item.text}</div>
                   </a>
                 </li>
               ))}

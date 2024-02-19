@@ -1,11 +1,4 @@
-import Image from "next/image";
-import {
-  BtnComponent,
-  CardHeading,
-  SectionDescription,
-  SectionName,
-  SectionTitle,
-} from "./components/ButtonComponent";
+"use client"
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Container1 from "./components/Container1/Container1";
@@ -16,10 +9,8 @@ import Container5 from "./components/Container5/Container5";
 import Contact from "./components/Contact/Contact";
 import Container7 from "./components/Container7/Container7";
 import Footer from "./components/Footer/Footer";
-import Test from "./components/Spline/Test";
 import Container4 from "./components/Container4/Container4";
 import MobileHeader from "./components/MobileHeader/MobileHeader";
-// import styles from "./page.module.css";
 
 export default function Home() {
   return (
