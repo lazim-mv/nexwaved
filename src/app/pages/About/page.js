@@ -11,12 +11,10 @@ import {
   SectionDescription,
   SectionTitle,
 } from "@/app/components/ButtonComponent";
-import { useWindowSize } from "@/app/utils/windowSize";
 import Contact from "@/app/components/Contact/Contact";
 import Footer from "@/app/components/Footer/Footer";
 
 const page = () => {
-  const { windowSize, isSmallScreen } = useWindowSize();
 
   return (
     <>
