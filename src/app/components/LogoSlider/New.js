@@ -8,7 +8,7 @@ const New = () => {
 
   let scrollers;
   useEffect(() => {
-    scrollers = document.querySelectorAll(".brands_scroller__Ud4hH");
+    scrollers = document.querySelectorAll(".new_scroller__s2re0");
     if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       addAnimation();
     }
@@ -21,7 +21,7 @@ const New = () => {
       scroller.setAttribute("data-animated", true);
 
       const scrollerInner = scroller.querySelector(
-        ".brands_scrollerInner__PJr__"
+        ".new_scrollerInner__A1TnE"
       );
 
       // Remove existing cloned elements before appending new ones
