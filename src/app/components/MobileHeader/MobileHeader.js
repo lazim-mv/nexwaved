@@ -40,7 +40,6 @@ function MobileHeader() {
         left: 0,
         right: 0,
         zIndex: 100,
-        borderBottom: "0.26666666666666666vw solid rgba(255,255,255,0.6)"
       }}
     >
       <div
@@ -52,6 +51,7 @@ function MobileHeader() {
           justifyContent: "space-between",
           alignItems: "center",
           height: "100%",
+          borderBottom: "0.26666666666666666vw solid rgba(255,255,255,0.6)"
         }}
       >
         <a href="/">

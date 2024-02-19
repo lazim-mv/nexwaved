@@ -14,35 +14,8 @@ import { isIOS } from "@/app/utils/iosCheck";
 const Container6 = () => {
   const cardData = container6Data.cardData;
 
-  const [isIosDevice, setIsIosDevice] = useState();
   const cardRefs = useRef([]);
 
-  useEffect(() => {
-    setIsIosDevice(isIOS());
-  }, []);
-
-  // UseLayoutEffect ensures that the refs are updated before the DOM is painted
-  useLayoutEffect(() => {
-    cardRefs.current = Array.from({ length: cardData.length }, (_, index) =>
-      React.createRef()
-    );
-  }, [cardData.length]);
-
-  const handleScroll = () => {
-    cardRefs.current.forEach((ref, index) => {
-      console.log(`Ref for card ${index}:`, ref.current);
-      if (ref.current && isIosDevice) {
-        console.log(ref.current, "con6");
-        ref.current.classList.add("iosDeviceClass");
-      } else if (ref.current && !isIosDevice) {
-        ref.current.classList.add("android");
-      }
-    });
-  };
-
-  useEffect(() => {
-    handleScroll()
-  }, [isIosDevice]);
 
   return (
     <div className={styles.container}>
@@ -57,7 +30,9 @@ const Container6 = () => {
         <div className={styles.cards}>
           {cardData.map((data, index) => (
             <div
-              className={styles.card}
+              className={`${styles.card} ${
+                isIOS() ? "iosDeviceClass" : "android"
+              }`}
               ref={cardRefs.current[index]}
               key={index}
             >

@@ -17,7 +17,6 @@ const BtnComponent = ({
   header,
   contact,
 }) => {
-  const { windowSize, isSmallScreen } = useWindowSize();
   useEffect(() => {});
 
   return (

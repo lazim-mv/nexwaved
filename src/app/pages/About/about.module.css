@@ -1,0 +1,249 @@
+.default {
+  --font-Roboto: "Roboto", sans-serif;
+  --containerPadding: 0 6.613756613756613vw;
+  --containerMarginTop: 9.920634920634921vw;
+  --backgroundContainerPadding: 6.510416666666667vw 9.765625vw;
+  --mobileContainerMarginTop: 16vw;
+  --mobileContainerPadding: 0 6.4vw;
+  --mobileBackgroundContainerPadding: 10.666666666666668vw 6.4vw;
+  --borderRadius: 0.6613756613756614vw;
+  --mobileBorderRadius: 2.666666666666667vw;
+  --padding100: 6.613756613756613vw;
+  --margin15: 0.992063492063492vw;
+  --margin20: 1.3227513227513228vw;
+  --margin30: 1.984126984126984vw;
+  --margin70: 4.62962962962963vw;
+  --margin100: 6.613756613756613vw;
+  --gap70: 4.62962962962963vw;
+  --gap20: 1.3227513227513228vw;
+  --gap30: 1.984126984126984vw;
+  --gap40: 2.6455026455026456vw;
+  --gap50: 3.3068783068783065vw;
+  --mainbgColor: #12171c;
+  --bgColor: #0c1117;
+  --font18: 1.1904761904761905vw;
+  --font24: 1.5873015873015872vw;
+  --font28: 1.8518518518518516vw;
+  --lineHeight18: 1.6666666666666667vw;
+  --lineHeight24: 2.2222222222222223vw;
+  --lineHeight28: 2.169973544973545vw;
+  --letterSpace18: 0.023809523809523808vw;
+  --letterSpace24: 0.015873015873015872vw;
+  --letterSpace28: 0.03703703703703704vw;
+  --mfont16: 4.266666666666667vw;
+  --mlineHeight16: 5.973333333333334vw;
+  --mletterSpace16: 0.08533333333333333vw;
+
+  --mfont12: 3.2vw;
+  --mlineHeight12: 4.4799999999999995vw;
+  --mletterSpace12: 0.4266666666666667vw;
+  --mfont14: 3.733333333333334vw;
+  --mlineHeight14: 5.226666666666667vw;
+  --mletterSpace14: 0.4266666666666667vw;
+
+  --mfont18: 4.8vw;
+  --mlineHeight18: 5.624vw;
+  --mletterSpace18: 0.4266666666666667vw;
+}
+
+.container {
+  padding: var(--containerPadding);
+  margin-top: var(--margin100);
+}
+
+.container h2 {
+  margin-bottom: var(--margin70);
+}
+
+.container p {
+  font-size: var(--font24);
+  line-height: var(--lineHeight24);
+}
+
+.aboutImg {
+  width: 100%;
+  height: 39.682539682539684vw;
+}
+
+.container2 {
+  padding: var(--containerPadding);
+  margin-top: var(--containerMarginTop);
+  display: grid;
+  gap: 3.968253968253968vw;
+  grid-template-columns: 41.4021164021164vw 41.4021164021164vw;
+  grid-template-rows: 15.608465608465607vw 19.841269841269842vw;
+}
+
+.container2 p {
+  font-size: var(--font18);
+  line-height: var(--lineHeight18);
+  letter-spacing: var(--letterSpace18);
+  margin: var(--margin30) 0 0 0;
+}
+
+.vision,
+.mission {
+  padding-top: 1.5873015873015872vw;
+  border-top: 0.06613756613756613vw solid rgba(255, 255, 255, 0.6);
+}
+
+.imgContainer {
+  grid-column: span 2;
+}
+
+.visionMission {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container3 {
+  padding: var(--containerPadding);
+  margin-top: var(--containerMarginTop);
+  display: grid;
+  gap: 0 var(--gap30);
+  grid-template-columns: 20.17195767195767vw 20.17195767195767vw 20.17195767195767vw 20.17195767195767vw;
+  grid-template-rows: 5.291005291005291vw auto;
+}
+
+.container3 h2 {
+  grid-column: span 4;
+  height: 5.291005291005291vw;
+  border-top: 0.06613756613756613vw solid rgba(255, 255, 255, 0.6);
+  padding-top: 1.5873015873015872vw;
+}
+
+.vCard {
+  margin-top: var(--margin70);
+  background-color: var(--bgColor);
+  padding: 2.6455026455026456vw 1.984126984126984vw 1.984126984126984vw
+    1.984126984126984vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  height: 3.968253968253968vw;
+  width: 3.968253968253968vw;
+  margin-bottom: var(--margin20);
+}
+
+.vCard h3 {
+  font-size: var(--font24);
+  line-height: var(--lineHeight24);
+  letter-spacing: var(--letterSpace24);
+}
+
+.vCard p {
+  margin-top: 0.6613756613756614vw;
+  text-align: center;
+  font-size: var(--font18);
+  line-height: var(--lineHeight18);
+  letter-spacing: var(--letterSpace18);
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: var(--mobileContainerPadding);
+    margin-top: calc(21.333333333333336vw + 21.333333333333336vw);
+  }
+
+  .container h2 {
+    margin-bottom: 8vw;
+    text-align: left;
+  }
+
+  .container p {
+    font-size: var(--mfont16);
+    line-height: var(--mlineHeight16);
+    width: auto !important;
+  }
+
+  .container p:nth-child(1) {
+    margin: 5.333333333333334vw 0 0 0 !important;
+  }
+
+  .aboutImg {
+    height: 106.66666666666667vw;
+    object-fit: cover;
+  }
+
+  .container2 {
+    padding: var(--mobileContainerPadding);
+    margin-top: var(--mobileContainerMarginTop);
+    display: grid;
+    gap: 8vw;
+    grid-template-columns: 87.2vw;
+    grid-template-rows: auto auto auto;
+  }
+
+  .vision,
+  .mission {
+    padding-top: 4vw;
+    border-top: 0.26666666666666666vw solid rgba(255, 255, 255, 0.6);
+  }
+
+  .container2 h2 {
+    text-align: left;
+  }
+
+  .container2 p {
+    font-size: var(--mfont12);
+    line-height: var(--mlineHeight12);
+    letter-spacing: var(--mletterSpace12);
+    margin: 4vw 0 0 0;
+  }
+
+  .imgContainer {
+    grid-column: span 1;
+    height: 66.66666666666666vw;
+  }
+
+  .container3 {
+    padding: var(--mobileContainerPadding);
+    margin-top: var(--mobileContainerMarginTop);
+    display: grid;
+    gap: 8vw 0;
+    grid-template-columns: 87.2vw;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  .container3 h2 {
+    grid-column: span 1;
+    text-align: left;
+    height: auto;
+    border-top: 0.06613756613756613vw solid rgba(255, 255, 255, 0.6);
+    padding-top: 15vw !important;
+  }
+
+  .vCard {
+    margin-top: -2.666666666666667vw;
+    background-color: var(--bgColor);
+    padding: 5.333333333333334vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon {
+    height:10.666666666666668vw;
+    width:10.666666666666668vw;
+    margin-bottom: 4vw;
+  }
+  
+  .vCard h3 {
+    font-size: var(--mfont16);
+    line-height: var(--lineHeight16);
+    letter-spacing: var(--letterSpace16);
+  }
+  
+  .vCard p {
+    margin-top: 2.666666666666667vw;
+    font-size: var(--mfont12);
+    line-height: var(--mlineHeight12);
+    letter-spacing: var(--mletterSpace12);
+  } 
+}
