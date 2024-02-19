@@ -54,6 +54,7 @@
   flex-direction: column;
   background: var(--mainbgColor);
   justify-content: center;
+  cursor: pointer;
 
   width: 56.94444444444444vw;
   padding: 1.6534391534391533vw 1.984126984126984vw 1.984126984126984vw

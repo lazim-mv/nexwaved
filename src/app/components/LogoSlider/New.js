@@ -43,8 +43,8 @@ const New = () => {
 
   return (
     <div className={styles.container}>
-      <div class={styles.scroller} data-direction="left" data-speed="slow">
-        <div class={styles.scrollerInner}>
+      <div className={styles.scroller} data-direction="left" data-speed="slow">
+        <div className={styles.scrollerInner}>
           {brandLogos.map((data, index) => (
             <img key={index} src={data} alt="" />
           ))}

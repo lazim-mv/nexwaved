@@ -71,12 +71,21 @@
   height: calc(191.7989417989418vw + 42.359788vw);
 }
 
+.cards .android {
+  animation: fade-outt linear forwards;
+}
+
 .card {
   padding: var(--gap50);
+  transform: scale(1);
   background: var(--mainbgColor);
-  /* animation: fade-outt linear forwards;
   animation-timeline: view();
-  animation-range: cover 75% cover 100%; */
+  animation-range: 75% 100%;
+}
+
+.cards .iosDeviceClass {
+  animation: none !important;
+  transform: scale(1);
 }
 
 .imageContainer {
@@ -97,21 +106,6 @@
   animation-timeline: view();
   animation-range: cover 60% cover 80%; */
   /* transition: all .8s ease; */
-}
-
-@keyframes img_key {
-  0% {
-    clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
-  }
-  100% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-}
-
-@keyframes fade-outt {
-  100% {
-    scale: 0.8;
-  }
 }
 
 /* @keyframes fade-out {
@@ -152,9 +146,9 @@
   .card {
     padding: 4vw;
     background: var(--mainbgColor);
-    animation: fade-outt linear forwards;
+    /* animation: fade-outt linear forwards;
     animation-timeline: view();
-    animation-range: cover 75% cover 100%;
+    animation-range: cover 75% cover 100%; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -180,5 +174,20 @@
     font-size: var(--mfont12);
     line-height: var(--mlineHeight12);
     letter-spacing: var(--mletterSpace12);
+  }
+}
+
+@keyframes img_key {
+  0% {
+    clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes fade-outt {
+  100% {
+    transform: scale(0.8);
   }
 }

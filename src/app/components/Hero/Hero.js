@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import styles from "./hero.module.css";
 import { BtnComponent, SectionDescription } from "../ButtonComponent";
 import { heroData } from "../../Content/content";
-import LogoSlider from "../LogoSlider/LogoSlider";
 import { useWindowSize } from "@/app/utils/windowSize";
 import New from "../LogoSlider/New";
 

@@ -142,8 +142,8 @@
     gap: 5.333333333333334vw;
     overflow-x: scroll;
     /* margin-bottom: 4vw; */
-    padding: 0;
-    height: 90vw;
+    padding: 0 0 7vw 0;
+    /* height: 90vw; */
   }
 
   .cards::-webkit-scrollbar {
