@@ -69,7 +69,7 @@ const page = () => {
       <div className={`${styles.container3} `}>
         <SectionTitle sectionText={container3.sectionTitle} />
         {container3.cardData.map((data, index) => (
-          <div className={styles.vCard}>
+          <div className={styles.vCard} key={index}>
             <Image
               unoptimized
               src={data.img}
