@@ -89,9 +89,9 @@ const Container6 = () => {
         <div className={styles.cards}>
           {cardData.map((data, index) => (
             <motion.div
-              initial={{ scale: 0.8 }}
+              initial={{ scale: 0.9 }}
               whileInView={{ scale: 1 }}
-              transition={{ duration: 0.8, ease: "easeInOut"}}
+              transition={{ duration: .4, ease: "easeInOut"}}
               className={styles.card}
               ref={cardRefs.current[index]}
               key={index}
