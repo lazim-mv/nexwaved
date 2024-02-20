@@ -19,11 +19,19 @@ const Page = () => {
   const cards = useRef();
   const cardImg = useRef([]);
 
-  let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  let lastScrollTop;
+
+  if (typeof window !== "undefined") {
+    lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  }
 
   const onScroll = useCallback(() => {
-    const scrollTopPosition =
-      window.pageYOffset || document.documentElement.scrollTop;
+    let scrollTopPosition;
+
+    if (typeof window !== "undefined") {
+      scrollTopPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+    }
 
     // Determine the scroll direction
     const scrollDirection = scrollTopPosition > lastScrollTop ? "down" : "up";
@@ -40,9 +48,9 @@ const Page = () => {
 
           // Increment or decrement based on the scroll direction
           if (scrollDirection === "down") {
-            translateValue -= 0.5;
+            translateValue -= 0.8;
           } else {
-            translateValue += 0.5;
+            translateValue += 0.8;
           }
 
           // Ensure translateValue is within the desired range
