@@ -13,9 +13,21 @@ import { isIOS } from "@/app/utils/iosCheck";
 
 const Container6 = () => {
   const cardData = container6Data.cardData;
+  const [ios, setIos] = useState(isIOS());
 
   const cardRefs = useRef([]);
-
+  useEffect(() => {
+    cardRefs.current.forEach((ref) => {
+      console.log(ref, "ios");
+      if (ref && ios) {
+        console.log(ref, "ios");
+        ref.classList.add("iosDeviceClass");
+      } else if (ref && !ios) {
+        console.log(ref, "iosss");
+        ref.classList.add("android");
+      }
+    });
+  }, [cardData.length, isIOS]);
 
   return (
     <div className={styles.container}>
@@ -30,10 +42,8 @@ const Container6 = () => {
         <div className={styles.cards}>
           {cardData.map((data, index) => (
             <div
-              className={`${styles.card} ${
-                isIOS() ? "iosDeviceClass" : "android"
-              }`}
-              ref={cardRefs.current[index]}
+              className={`${styles.card} `}
+              ref={(ref) => (cardRefs.current[index] = ref)}
               key={index}
             >
               <SectionTitle

@@ -164,7 +164,8 @@
 
 .textFields textarea {
   width: 73.54497354497354vw;
-  padding-bottom: 7.936507936507936vw;
+ 
+  height: 9.788359788359788vw;
   background: transparent;
   border: none;
   border-bottom: 0.06613756613756613vw solid rgba(255, 255, 255, 0.6);
@@ -173,7 +174,7 @@
 
 .textFields textarea:focus {
   border-bottom: 0.06613756613756613vw solid rgba(255, 255, 255, 1);
-  padding-bottom: 1.936507936507936vw;
+  
 }
 
 .contactSection {
@@ -300,7 +301,9 @@
 
   .textFields textarea {
     width: auto;
-    padding-bottom: 18.666666666666668vw;
+    /* padding-bottom: 18.666666666666668vw; */
+    height: 22.666666666666664vw;
+
   }
 
   .contactSection {
