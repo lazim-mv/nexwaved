@@ -15,11 +15,9 @@ import Container3 from "@/app/components/Container3/Container3";
 import Footer from "@/app/components/Footer/Footer";
 import Contact from "@/app/components/Contact/Contact";
 
-const page = () => {
+const Page = () => {
   const cards = useRef();
   const cardImg = useRef([]);
-  const [scrollY, setScrollY] = useState();
-  const [inView, setInView] = useState();
 
   let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -163,4 +161,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
