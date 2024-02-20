@@ -28,29 +28,30 @@ const Container1 = () => {
         alt="ImageClients"
         className={styles.aboutImg}
       />
-        <SectionDescription
-          sectionText={container1Data.description1}
-          width="66.13756613756614vw"
-          margin="6.613756613756613vw 0 0 0"
-        />
+      <SectionDescription
+        sectionText={container1Data.description1}
+        width="66.13756613756614vw"
+        margin="6.613756613756613vw 0 0 0"
+      />
 
-        <br />
-        <SectionDescription
-          sectionText={container1Data.description2}
-          width="66.13756613756614vw"
-        />
-
-        <BtnComponent
-          buttonText={container1Data.btnText}
-          borderColor="rgba(255, 255, 255, 0.6)"
-          bg="transparent"
-          color="#fff"
-          margin={
-            isSmallScreen
-              ? "5.333333333333334vw 0 0 0"
-              : "1.984126984126984vw 0 0 0"
-          }
-        />
+      <br />
+      <SectionDescription
+        sectionText={container1Data.description2}
+        width="66.13756613756614vw"
+      />
+      <a href="pages/About">
+      <BtnComponent
+        buttonText={container1Data.btnText}
+        borderColor="rgba(255, 255, 255, 0.6)"
+        bg="transparent"
+        color="#fff"
+        margin={
+          isSmallScreen
+            ? "5.333333333333334vw 0 0 0"
+            : "1.984126984126984vw 0 0 0"
+        }
+      />
+      </a>
     </div>
   );
 };

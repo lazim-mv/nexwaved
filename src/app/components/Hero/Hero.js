@@ -43,12 +43,14 @@ const Hero = () => {
           sectionText={heroData.description}
           width="39.41798941798942vw"
         />
+        <a href="pages/Services">
         <BtnComponent
           buttonText={heroData.btnText}
           borderColor="rgba(255, 255, 255, 0.6)"
           bg="transparent"
           color="#fff"
         />
+        </a>
       </div>
       {/* <LogoSlider
         imageSources={repeatedImageSources}

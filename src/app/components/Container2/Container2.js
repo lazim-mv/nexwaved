@@ -37,16 +37,18 @@ const Container2 = () => {
           sectionText={container2Data.sectionTitle}
           padding="1.5873015873015872vw 0 0 0"
         />
-        {!isSmallScreen && (
-          <BtnComponent
-            buttonText={container2Data.btnText}
-            borderColor="rgba(255, 255, 255, 0.6)"
-            bg="transparent"
-            color="#fff"
-            margin="1.5873015873015872vw 0 0 0"
-            arrow={true}
-          />
-        )}
+        <a href="pages/Services">
+          {!isSmallScreen && (
+            <BtnComponent
+              buttonText={container2Data.btnText}
+              borderColor="rgba(255, 255, 255, 0.6)"
+              bg="transparent"
+              color="#fff"
+              margin="1.5873015873015872vw 0 0 0"
+              arrow={true}
+            />
+          )}
+        </a>
       </div>
 
       <div className={styles.cards}>
@@ -98,17 +100,20 @@ const Container2 = () => {
           </div>
         ))}
       </div>
-
-      {isSmallScreen && (
-        <BtnComponent
-          buttonText={container2Data.btnText}
-          borderColor="rgba(255, 255, 255, 0.6)"
-          bg="transparent"
-          color="#fff"
-          margin="8vw auto 0 auto"
-          arrow={true}
-        />
-      )}
+      <a href="pages/Services">
+        {isSmallScreen && (
+          <div className={styles.forMobileButton}>
+            <BtnComponent
+              buttonText={container2Data.btnText}
+              borderColor="rgba(255, 255, 255, 0.6)"
+              bg="transparent"
+              color="#fff"
+              margin="8vw auto 0 auto"
+              arrow={true}
+            />
+          </div>
+        )}
+      </a>
     </div>
   );
 };

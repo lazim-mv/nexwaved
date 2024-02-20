@@ -149,6 +149,7 @@
   border-bottom: 0.06613756613756613vw solid rgba(255, 255, 255, 0.6);
   transition: border-bottom 0.3s ease;
   outline: none;
+  height: 3.835978835978836vw;
 }
 
 .textFields input:-webkit-autofill,
@@ -164,7 +165,7 @@
 
 .textFields textarea {
   width: 73.54497354497354vw;
- 
+
   height: 9.788359788359788vw;
   background: transparent;
   border: none;
@@ -174,7 +175,6 @@
 
 .textFields textarea:focus {
   border-bottom: 0.06613756613756613vw solid rgba(255, 255, 255, 1);
-  
 }
 
 .contactSection {
@@ -297,13 +297,13 @@
     width: auto;
     padding-bottom: 4vw;
     border-bottom: 0.26666666666666666vw solid rgba(255, 255, 255, 0.6);
+    height: 9.333333333333334vw;
   }
 
   .textFields textarea {
     width: auto;
     /* padding-bottom: 18.666666666666668vw; */
     height: 22.666666666666664vw;
-
   }
 
   .contactSection {

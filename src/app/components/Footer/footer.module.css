@@ -65,9 +65,15 @@
   margin-bottom: var(--margin30);
 }
 
+.linksList{
+  display: flex;
+  flex-direction: column;
+}
+
 .text {
   color: rgba(255, 255, 255, 1);
   margin-bottom: var(--margin15);
+  cursor: pointer;
 }
 
 .bottom {

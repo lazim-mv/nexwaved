@@ -281,6 +281,7 @@ const footer = {
   links: {
     heading: "Quick Link",
     texts: ["Home", "About Us", "Services", "Blog", "Contact Us"],
+    href:["/","pages/About","pages/Services","","pages/Contact"]
   },
   social: {
     heading: "Follow Us",
