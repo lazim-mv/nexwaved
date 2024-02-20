@@ -18,6 +18,7 @@ const BtnComponent = ({
   contact,
 }) => {
   useEffect(() => {});
+  const { windowSize, isSmallScreen } = useWindowSize();
 
   return (
     <div
@@ -26,12 +27,39 @@ const BtnComponent = ({
         border: "0.06613756613756613vw solid " + borderColor,
         background: bg,
         color: color,
-        width: width ? width : "13.647486772486772vw",
-        height: height ? height : "3.6375661375661372vw",
+        // width: width ? width : "13.647486772486772vw",
+        width: width,
+        // height: height ? height : "3.6375661375661372vw",
+        height: height,
         margin: margin,
+        display: "inline-flex",
       }}
     >
-      <h5>{buttonText}</h5>
+      <h5
+        style={{
+          paddingTop: !isSmallScreen
+            ? "0.992063492063492vw "
+            : "2.666666666666667vw",
+
+          paddingBottom: !isSmallScreen
+            ? "0.992063492063492vw "
+            : "2.666666666666667vw",
+
+          paddingLeft: !isSmallScreen
+            ? "2.6455026455026456vw "
+            : "5.333333333333334vw",
+
+          paddingRight: !isSmallScreen
+            ? arrow
+              ? "2.6455026455026456vw"
+              : "0.6613756613756614vw"
+            : arrow
+            ? "5.333333333333334vw"
+            : "2.666666666666667vw",
+        }}
+      >
+        {buttonText}
+      </h5>
       {!arrow ? (
         <Image
           className="arrow"
@@ -42,9 +70,11 @@ const BtnComponent = ({
           quality={100}
           priority={true}
           unoptimized
-          //   style={{
-          //     filter: arrowColor ? "brightness(1000%)" : "",
-          //   }}
+          style={{
+            paddingRight: !isSmallScreen
+              ? "2.666666666666667vw"
+              : "5.333333333333334vw",
+          }}
         />
       ) : (
         ""

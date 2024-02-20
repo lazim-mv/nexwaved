@@ -182,7 +182,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.6613756613756614vw;
+  gap: 0;
   border-radius: 3.2552083333333335vw;
   position: relative;
   overflow: hidden;
@@ -225,9 +225,8 @@ a {
 }
 
 .arrow {
-  width: 0.7506613756613757vw;
   height: 0.7506613756613757vw;
-  /* margin-bottom: 0.26455026455026454vw; */
+  width: auto;
 }
 
 .listHoverTop,
@@ -370,10 +369,9 @@ a {
   }
 
   .btnContainer {
-    width: 34.66666666666667vw !important;
+    /* width: 34.66666666666667vw !important; */
     height: 9.866666666666667vw !important;
     border-radius: 9.866666666666667vw;
-    gap: 2.666666666666667vw;
   }
 
   .btnContainer::before {
@@ -382,7 +380,6 @@ a {
   }
 
   .arrow {
-    width: 2.666666666666667vw;
     height: 2.666666666666667vw;
   }
 

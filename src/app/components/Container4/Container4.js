@@ -8,8 +8,11 @@ import {
   SectionDescription,
   SectionTitle,
 } from "../ButtonComponent";
+import { useWindowSize } from "@/app/utils/windowSize";
 
 const Container4 = () => {
+  const { windowSize, isSmallScreen } = useWindowSize();
+
   return (
     <div className={styles.container}>
       <div className={styles.splineObject}>
@@ -30,6 +33,7 @@ const Container4 = () => {
           borderColor="rgba(255, 255, 255, 0.6)"
           bg="transparent"
           color="#fff"
+          width={isSmallScreen ? "34vw" : "14vw"}
         />
       </div>
     </div>

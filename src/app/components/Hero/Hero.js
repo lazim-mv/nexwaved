@@ -48,7 +48,6 @@ const Hero = () => {
           borderColor="rgba(255, 255, 255, 0.6)"
           bg="transparent"
           color="#fff"
-          width={isSmallScreen && "34.66666666666667vw"}
         />
       </div>
       {/* <LogoSlider
