@@ -21,62 +21,64 @@ const page = () => {
   const [scrollY, setScrollY] = useState();
   const [inView, setInView] = useState();
 
-  let lastScrollTop =
-  window.pageYOffset || document.documentElement.scrollTop;
+  let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-const onScroll = useCallback(() => {
-  const scrollTopPosition =
-    window.pageYOffset || document.documentElement.scrollTop;
+  const onScroll = useCallback(() => {
+    const scrollTopPosition =
+      window.pageYOffset || document.documentElement.scrollTop;
 
-  // Determine the scroll direction
-  const scrollDirection =
-    scrollTopPosition > lastScrollTop ? 'down' : 'up';
+    // Determine the scroll direction
+    const scrollDirection = scrollTopPosition > lastScrollTop ? "down" : "up";
 
-  if (Array.isArray(cardImg.current)) {
-    cardImg.current.forEach((imgElement, index) => {
-      const rect = imgElement.getBoundingClientRect();
-      const isInView =
-        rect.top < window.innerHeight && rect.bottom >= 0;
+    if (Array.isArray(cardImg.current)) {
+      cardImg.current.forEach((imgElement, index) => {
+        const rect = imgElement.getBoundingClientRect();
+        const isInView = rect.top < window.innerHeight && rect.bottom >= 0;
 
-      if (isInView) {
-        // Adjust translateValue based on scroll direction
-        let translateValue = imgElement.dataset.translateValue || 0;
-        translateValue = parseInt(translateValue, 10);
+        if (isInView) {
+          // Adjust translateValue based on scroll direction
+          let translateValue = imgElement.dataset.translateValue || 0;
+          translateValue = parseFloat(translateValue, 10);
 
-        if (scrollDirection === 'down') {
-          translateValue -= 1;
-          console.log("down")
+          // Increment or decrement based on the scroll direction
+          if (scrollDirection === "down") {
+            translateValue -= 0.5;
+          } else {
+            translateValue += 0.5;
+          }
+
+          // Ensure translateValue is within the desired range
+          translateValue = Math.max(-200, Math.min(0, translateValue));
+
+          // Apply the new translateValue to the element and update the dataset
+          imgElement.style.transform = `translateY(${translateValue}px) translateZ(0px)`;
+          imgElement.dataset.translateValue = translateValue.toString();
         } else {
-          console.log("downUp")
-          translateValue += 1;
+          // Reset translateValue for out-of-view images
+          // imgElement.style.transform = "translateY(0px) translateZ(0px)";
+          // imgElement.dataset.translateValue = "0";
         }
+      });
+    } else {
+      console.error("cardImg.current is not an array");
+    }
 
-        // Ensure translateValue is within the desired range
-        translateValue = Math.max(-200, Math.min(0, translateValue));
+    lastScrollTop = scrollTopPosition <= 0 ? 0 : scrollTopPosition;
+  }, []);
 
-        // Apply the new translateValue to the element and update the dataset
-        imgElement.style.transform = `translateY(${translateValue}px) translateZ(0px)`;
-        imgElement.dataset.translateValue = translateValue.toString();
-      } else {
-        // // Reset translateValue for out-of-view images
-        // imgElement.style.transform = 'translateY(0px) translateZ(0px)';
-        // imgElement.dataset.translateValue = '0';
-      }
-    });
-  } else {
-    console.error('cardImg.current is not an array');
-  }
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll, { passive: true });
+    };
+  }, [onScroll]);
 
-  lastScrollTop = scrollTopPosition <= 0 ? 0 : scrollTopPosition;
-}, []);
-
-useEffect(() => {
-  window.addEventListener('scroll', onScroll, { passive: true });
-  return () => {
-    window.removeEventListener('scroll', onScroll, { passive: true });
-  };
-}, [onScroll]);
-
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll, { passive: true });
+    };
+  }, [onScroll]);
 
   return (
     <>

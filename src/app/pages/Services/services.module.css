@@ -202,9 +202,17 @@
     width: 87.2vw;
   }
 
-  .serviceImg {
+  .serviceImgContainer {
     width: 87.2vw;
     height: 80vw;
+    margin-bottom: var(--margin30);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .serviceImg {
+    height: 150%;
+    width: 100%;
     margin-bottom: 4vw;
     object-fit: cover;
   }
