@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import styles from "./services.module.css";
 import {
   BtnComponent,
@@ -15,6 +16,68 @@ import Footer from "@/app/components/Footer/Footer";
 import Contact from "@/app/components/Contact/Contact";
 
 const page = () => {
+  const cards = useRef();
+  const cardImg = useRef([]);
+  const [scrollY, setScrollY] = useState();
+  const [inView, setInView] = useState();
+
+  let lastScrollTop =
+  window.pageYOffset || document.documentElement.scrollTop;
+
+const onScroll = useCallback(() => {
+  const scrollTopPosition =
+    window.pageYOffset || document.documentElement.scrollTop;
+
+  // Determine the scroll direction
+  const scrollDirection =
+    scrollTopPosition > lastScrollTop ? 'down' : 'up';
+
+  if (Array.isArray(cardImg.current)) {
+    cardImg.current.forEach((imgElement, index) => {
+      const rect = imgElement.getBoundingClientRect();
+      const isInView =
+        rect.top < window.innerHeight && rect.bottom >= 0;
+
+      if (isInView) {
+        // Adjust translateValue based on scroll direction
+        let translateValue = imgElement.dataset.translateValue || 0;
+        translateValue = parseInt(translateValue, 10);
+
+        if (scrollDirection === 'down') {
+          translateValue -= 1;
+          console.log("down")
+        } else {
+          console.log("downUp")
+          translateValue += 1;
+        }
+
+        // Ensure translateValue is within the desired range
+        translateValue = Math.max(-200, Math.min(0, translateValue));
+
+        // Apply the new translateValue to the element and update the dataset
+        imgElement.style.transform = `translateY(${translateValue}px) translateZ(0px)`;
+        imgElement.dataset.translateValue = translateValue.toString();
+      } else {
+        // // Reset translateValue for out-of-view images
+        // imgElement.style.transform = 'translateY(0px) translateZ(0px)';
+        // imgElement.dataset.translateValue = '0';
+      }
+    });
+  } else {
+    console.error('cardImg.current is not an array');
+  }
+
+  lastScrollTop = scrollTopPosition <= 0 ? 0 : scrollTopPosition;
+}, []);
+
+useEffect(() => {
+  window.addEventListener('scroll', onScroll, { passive: true });
+  return () => {
+    window.removeEventListener('scroll', onScroll, { passive: true });
+  };
+}, [onScroll]);
+
+
   return (
     <>
       <Header />
@@ -65,17 +128,20 @@ const page = () => {
           </a>
         </div>
 
-        <div className={styles.cards}>
+        <div className={styles.cards} ref={cards}>
           {container2.cardData.map((data, index) => (
             <div className={styles.card} key={index} id={data.id}>
-              <Image
-                unoptimized
-                src={data.img}
-                width={100}
-                height={0}
-                alt="ImageClients"
-                className={styles.serviceImg}
-              />
+              <div className={styles.serviceImgContainer}>
+                <Image
+                  ref={(ref) => (cardImg.current[index] = ref)}
+                  unoptimized
+                  src={data.img}
+                  width={100}
+                  height={0}
+                  alt="ImageClients"
+                  className={styles.serviceImg}
+                />
+              </div>
               <SectionTitle sectionText={data.sectionTitle} />
               <div className={styles.descContainer}>
                 <SectionDescription sectionText={data.description1} />

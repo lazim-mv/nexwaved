@@ -102,10 +102,21 @@
   width: 73.54497354497354vw;
 }
 
-.serviceImg {
+.serviceImgContainer {
   width: 73.54497354497354vw;
   height: 33.06878306878307vw;
   margin-bottom: var(--margin30);
+  overflow: hidden;
+  position: relative;
+}
+
+.serviceImg {
+  height: 150%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1s ease;
+  /* scale: 2; */
+  object-position: bottom;
 }
 
 .card h2 {
@@ -172,8 +183,8 @@
     margin-top: 8vw;
     white-space: nowrap !important;
   }
-  
-  .button::-webkit-scrollbar{
+
+  .button::-webkit-scrollbar {
     width: 0;
   }
 
@@ -197,27 +208,26 @@
     margin-bottom: 4vw;
     object-fit: cover;
   }
- 
+
   .card h2 {
     margin-bottom: 2.666666666666667vw;
     text-align: left;
   }
-   
+
   .descContainer {
     display: flex;
     flex-direction: column;
     gap: 4vw;
   }
-  
+
   .descContainer p {
     font-size: var(--mfont12);
     line-height: var(--mlineHeight12);
     letter-spacing: var(--mletterSpace12);
   }
-  
+
   .card hr {
     width: 100%;
     margin-top: 5.333333333333334vw;
   }
-
 }
