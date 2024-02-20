@@ -11,6 +11,7 @@ const container2 = {
   btnText4: "Marketing",
   cardData: [
     {
+      id:"one",
       img: "/ServicePage/1.png",
       sectionTitle: "Digital Strategy",
       description1:
@@ -19,6 +20,7 @@ const container2 = {
         "Art Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral DesignArt Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral Design",
     },
     {
+     id:"two",
       img: "/ServicePage/2.png",
       sectionTitle: "Digital Strategy",
       description1:
@@ -27,6 +29,7 @@ const container2 = {
         "Art Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral DesignArt Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral Design",
     },
     {
+     id:"three",
       img: "/ServicePage/3.png",
       sectionTitle: "Digital Strategy",
       description1:
@@ -35,6 +38,7 @@ const container2 = {
         "Art Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral DesignArt Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral Design",
     },
     {
+     id:"four",
       img: "/ServicePage/4.png",
       sectionTitle: "Digital Strategy",
       description1:

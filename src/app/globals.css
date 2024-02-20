@@ -52,10 +52,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #12171c;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -453,15 +455,6 @@ a {
 
 html {
   color-scheme: dark;
-}
-
-.bodyss {
-  display: grid;
-  min-block-size: 100vh;
-  place-content: center;
-  font-family: system-ui;
-  font-size: 1.125rem;
-  background-color: var(--clr-primary-800);
 }
 
 .tag-list {

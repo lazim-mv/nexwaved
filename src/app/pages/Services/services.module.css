@@ -127,6 +127,11 @@
 .card hr {
   width: 100%;
   margin-top: 2.6455026455026456vw;
+  opacity: 1;
+}
+
+.cards .card:last-child hr {
+  display: none;
 }
 
 @media only screen and (max-width: 767px) {
@@ -160,37 +165,23 @@
 
   .button {
     display: flex;
-    gap: 8vw;
+    gap: 4vw;
     justify-content: flex-start;
     overflow-x: scroll;
     width: auto;
+    margin-top: 8vw;
     white-space: nowrap !important;
-    padding-left: 50vw;
-    display: none;
   }
-  /* 
-  .button::scrollbar-width {
+  
+  .button::-webkit-scrollbar{
     width: 0;
   }
-
-  .button div {
-    width: 33.33333333333333vw !important;
-    padding: 2.666666666666667vw 5.333333333333334vw;
-  }
-
-  .button div h5 {
-    padding-left: 5.333333333333334vw;
-    font-size: var(--mfont12);
-    line-height: var(--mlineHeight12);
-    letter-spacing: var(--mletterSpace12);
-    display: inline-block;
-  } */
 
   .cards {
     display: flex;
     flex-direction: column;
     gap: 5.333333333333334vw;
-    margin-top: 8vw;
+    margin-top: 4vw;
     align-items: center;
   }
 

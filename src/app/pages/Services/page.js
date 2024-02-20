@@ -15,7 +15,6 @@ import Footer from "@/app/components/Footer/Footer";
 import Contact from "@/app/components/Contact/Contact";
 
 const page = () => {
-    
   return (
     <>
       <Header />
@@ -23,44 +22,52 @@ const page = () => {
       <div className={styles.container}>
         <SectionTitle sectionText={container1.sectionTitle} />
         <SectionDescription sectionText={container1.description} />
-        <hr />
+        {/* <hr /> */}
       </div>
 
       <div className={styles.container2}>
         <div className={styles.button}>
-          <BtnComponent
-            buttonText={container2.btnText1}
-            borderColor="rgba(255, 255, 255, 0.6)"
-            bg="transparent"
-            color="#fff"
-            arrow={true}
-          />
-          <BtnComponent
-            buttonText={container2.btnText2}
-            borderColor="rgba(255, 255, 255, 0.6)"
-            bg="transparent"
-            color="#fff"
-            arrow={true}
-          />
-          <BtnComponent
-            buttonText={container2.btnText3}
-            borderColor="rgba(255, 255, 255, 0.6)"
-            bg="transparent"
-            color="#fff"
-            arrow={true}
-          />
-          <BtnComponent
-            buttonText={container2.btnText4}
-            borderColor="rgba(255, 255, 255, 0.6)"
-            bg="transparent"
-            color="#fff"
-            arrow={true}
-          />
+          <a href="#one">
+            <BtnComponent
+              buttonText={container2.btnText1}
+              borderColor="rgba(255, 255, 255, 0.6)"
+              bg="transparent"
+              color="#fff"
+              arrow={true}
+            />
+          </a>
+          <a href="#two">
+            <BtnComponent
+              buttonText={container2.btnText2}
+              borderColor="rgba(255, 255, 255, 0.6)"
+              bg="transparent"
+              color="#fff"
+              arrow={true}
+            />
+          </a>
+          <a href="#three">
+            <BtnComponent
+              buttonText={container2.btnText3}
+              borderColor="rgba(255, 255, 255, 0.6)"
+              bg="transparent"
+              color="#fff"
+              arrow={true}
+            />
+          </a>
+          <a href="#four">
+            <BtnComponent
+              buttonText={container2.btnText4}
+              borderColor="rgba(255, 255, 255, 0.6)"
+              bg="transparent"
+              color="#fff"
+              arrow={true}
+            />
+          </a>
         </div>
 
         <div className={styles.cards}>
           {container2.cardData.map((data, index) => (
-            <div className={styles.card} key={index}>
+            <div className={styles.card} key={index} id={data.id}>
               <Image
                 unoptimized
                 src={data.img}
