@@ -53,27 +53,31 @@ const page = () => {
             </div>
           </div>
           <div className={styles.textFields}>
-            <label htmlFor="firstName">
-              First Name
-              <input type="text" id="designing" name="firstName" />
-            </label>
-            <label htmlFor="lastName">
-              Last Name
-              <input type="text" id="designing" name="lastName" />
-            </label>
-            <label htmlFor="emai">
-              Email
-              <input type="email" id="designing" name="email" />
-            </label>
-            <label htmlFor="number">
-              Phone Number
-              <input type="number" id="number" name="number" />
-            </label>
-
-            <label htmlFor="message">
-              Message
-              <textarea type="text" id="message" name="message" />
-            </label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Last Name"
+            />
+            <input type="email" id="email" name="email" placeholder="Email" />
+            <input
+              type="number"
+              id="number"
+              name="number"
+              placeholder="Phone Number"
+            />
+            <textarea
+              type="text"
+              id="message"
+              name="message"
+              placeholder="Message"
+            />
           </div>
           <div className={styles.forButton}>
             <BtnComponent

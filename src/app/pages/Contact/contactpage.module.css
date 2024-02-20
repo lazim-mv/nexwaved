@@ -72,6 +72,20 @@
     6.613756613756613vw;
 }
 
+.bgContainer input::placeholder {
+  font-size: 1.3227513227513228vw;
+  line-height: 1.8518518518518516vw;
+  letter-spacing: 0.026455026455026457vw;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.bgContainer textarea::placeholder {
+  font-size: 1.3227513227513228vw;
+  line-height: 1.8518518518518516vw;
+  letter-spacing: 0.026455026455026457vw;
+  color: rgba(255, 255, 255, 0.4);
+}
+
 .bgContainer label {
   font-size: 1.3227513227513228vw;
   line-height: 1.8518518518518516vw;
@@ -105,11 +119,19 @@
   height: 1.984126984126984vw;
   margin-right: 0.6613756613756614vw;
   cursor: pointer;
+  position: relative;
 }
 
-.checkBoxs input[type="checkbox"]:checked {
+.checkBoxs input[type="checkbox"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.7936507936507936vw; /* Adjust as needed */
+  height: 0.7936507936507936vw; /* Adjust as needed */
   background-color: #2b61f7;
-  border-color: #2b61f7;
+  border-radius: 50%;
 }
 
 .textFields {
@@ -119,17 +141,25 @@
   margin-top: 3.3068783068783065vw;
 }
 
-.textFields label {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap20);
-}
-
 .textFields input {
   width: 35.44973544973545vw;
   background: transparent;
   border: none;
+  padding-bottom: var(--margin30);
   border-bottom: 0.06613756613756613vw solid rgba(255, 255, 255, 0.6);
+  transition: border-bottom 0.3s ease;
+  outline: none;
+}
+
+.textFields input:-webkit-autofill,
+.textFields input:-webkit-autofill:hover,
+.textFields input:-webkit-autofill:focus,
+.textFields input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #0c1117 inset !important; /* Set the background color you want */
+}
+
+.textFields input:focus {
+  border-bottom: 0.06613756613756613vw solid rgba(255, 255, 255, 1);
 }
 
 .textFields textarea {
@@ -138,6 +168,12 @@
   background: transparent;
   border: none;
   border-bottom: 0.06613756613756613vw solid rgba(255, 255, 255, 0.6);
+  outline: none;
+}
+
+.textFields textarea:focus {
+  border-bottom: 0.06613756613756613vw solid rgba(255, 255, 255, 1);
+  padding-bottom: 1.936507936507936vw;
 }
 
 .contactSection {
@@ -194,6 +230,20 @@
     color: rgba(255, 255, 255, 0.4);
   }
 
+  .bgContainer input::placeholder {
+    font-size: var(--mfont14);
+    line-height: var(--mlineHeight14);
+    letter-spacing: var(--mletterSpace14);
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .bgContainer textarea::placeholder {
+    font-size: var(--mfont14);
+    line-height: var(--mlineHeight14);
+    letter-spacing: var(--mletterSpace14);
+    color: rgba(255, 255, 255, 0.4);
+  }
+
   .checkBoxs {
     display: flex;
     flex-direction: column;
@@ -223,6 +273,11 @@
     cursor: pointer;
   }
 
+  .checkBoxs input[type="checkbox"]:checked::before {
+    width: 2.1333333333333333vw;
+    height: 2.1333333333333333vw;
+  }
+
   .textFields {
     display: flex;
     flex-direction: column;
@@ -230,23 +285,24 @@
     gap: 5.333333333333334vw;
     margin-top: 5.333333333333334vw;
   }
-  
+
   .textFields label {
     display: flex;
     flex-direction: column;
     gap: 0vw;
   }
-  
+
   .textFields input {
     width: auto;
+    padding-bottom: 4vw;
     border-bottom: 0.26666666666666666vw solid rgba(255, 255, 255, 0.6);
   }
-  
+
   .textFields textarea {
     width: auto;
     padding-bottom: 18.666666666666668vw;
   }
-  
+
   .contactSection {
     padding: 5.333333333333334vw 0;
     display: flex;
@@ -254,21 +310,21 @@
     gap: 5.333333333333334vw;
   }
 
-  .contactSection p:first-child{
+  .contactSection p:first-child {
     align-items: flex-start;
   }
-  
+
   .contactSection p {
     display: flex;
     align-items: center;
     gap: 2.666666666666667vw;
   }
-  
+
   .icon {
     width: 8vw;
     height: 8vw;
   }
-  
+
   .forButton {
     display: flex;
     width: 100%;
