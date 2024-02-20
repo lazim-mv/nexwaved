@@ -12,7 +12,7 @@ const container2 = {
   cardData: [
     {
       id:"one",
-      img: "/ServicePage/1.png",
+      img: "/ServicePage/nexwave/1.png",
       sectionTitle: "Digital Strategy",
       description1:
         "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!",
@@ -21,7 +21,7 @@ const container2 = {
     },
     {
      id:"two",
-      img: "/ServicePage/2.png",
+      img: "/ServicePage/nexwave/2.png",
       sectionTitle: "Digital Strategy",
       description1:
         "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!",
@@ -30,7 +30,7 @@ const container2 = {
     },
     {
      id:"three",
-      img: "/ServicePage/3.png",
+      img: "/ServicePage/nexwave/3.png",
       sectionTitle: "Digital Strategy",
       description1:
         "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!",
@@ -39,7 +39,7 @@ const container2 = {
     },
     {
      id:"four",
-      img: "/ServicePage/4.png",
+      img: "/ServicePage/nexwave/4.png",
       sectionTitle: "Digital Strategy",
       description1:
         "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!",

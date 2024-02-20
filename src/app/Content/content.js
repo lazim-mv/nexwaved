@@ -223,6 +223,44 @@ const container7Data = {
   ],
 };
 
+const container8Data = {
+  sectionName: "faq",
+  sectionTitle: "Frequently asked questions",
+  faqData: [
+    {
+      number: "01",
+      question: "What services do you offer for branding?",
+      answer:
+        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+      isAnswerVisible: true,
+    },
+    {
+      number: "01",
+      question: "What services do you offer for branding?",
+      answer:
+        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+    },
+    {
+      number: "01",
+      question: "What services do you offer for branding?",
+      answer:
+        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+    },
+    {
+      number: "01",
+      question: "What services do you offer for branding?",
+      answer:
+        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+    },
+    {
+      number: "01",
+      question: "What services do you offer for branding?",
+      answer:
+        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+    },
+  ],
+};
+
 const contact = {
   sectionName: "CONTACT",
   sectionTitle: "Let's start building your brand's unique story together.",
@@ -258,6 +296,7 @@ export {
   container5Data,
   container6Data,
   container7Data,
+  container8Data,
   contact,
   footer,
 };
