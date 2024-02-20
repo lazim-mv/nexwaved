@@ -180,4 +180,10 @@
     position: relative;
     display: inline-block;
   }
+
+  .btnCenter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }

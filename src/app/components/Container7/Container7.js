@@ -45,14 +45,16 @@ const Container7 = () => {
         ))}
       </div>
       {isSmallScreen && (
-        <BtnComponent
-          buttonText={container7Data.btnText}
-          borderColor="rgba(255, 255, 255, 0.6)"
-          bg="transparent"
-          color="#fff"
-          arrow={true}
-          margin="0 auto"
-        />
+        <div className={styles.btnCenter}>
+          <BtnComponent
+            buttonText={container7Data.btnText}
+            borderColor="rgba(255, 255, 255, 0.6)"
+            bg="transparent"
+            color="#fff"
+            arrow={true}
+            margin="0 auto"
+          />
+        </div>
       )}
     </div>
   );
