@@ -90,7 +90,7 @@ const page = () => {
         ))}
       </div>
 
-      <Contact />
+      <Contact page={true}/>
       <Footer />
     </>
   );

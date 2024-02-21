@@ -3,14 +3,14 @@ import styles from "./contact.module.css";
 import { contact } from "@/app/Content/content";
 import { BtnComponent } from "../ButtonComponent";
 
-const Contact = () => {
+const Contact = ({page}) => {
   return (
     <div className={styles.container}>
       <div className={styles.innerContainer}>
         <h6 className={styles.sectionName}>{contact.sectionName}</h6>
         <div className={styles.title}>
           <h1>{contact.sectionTitle}</h1>
-          <a href="pages/Contact">
+          <a href={`${page ? "Contact" : "pages/Contact"}`}>
             <BtnComponent
               buttonText={contact.btnText}
               borderColor="rgba(255, 255, 255, 0.6)"

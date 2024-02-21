@@ -163,7 +163,7 @@ const Page = () => {
 
       <Container6 />
       <Container3 />
-      <Contact />
+      <Contact  page={true}/>
       <Footer />
     </>
   );
