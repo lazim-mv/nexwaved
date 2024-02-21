@@ -12,53 +12,27 @@ import Footer from "./components/Footer/Footer";
 import Container4 from "./components/Container4/Container4";
 import MobileHeader from "./components/MobileHeader/MobileHeader";
 import { useEffect } from "react";
-import { isIOS } from "./utils/iosCheck";
-import { BtnComponent } from "./components/ButtonComponent";
+// import { isIOS } from "./utils/iosCheck";
+// import { BtnComponent } from "./components/ButtonComponent";
+
 
 export default function Home() {
-  useEffect(() => {
-    console.log(!isIOS(), "ios");
-    if (isIOS()) {
-      document.documentElement.classList.add("iosDevice");
-    }
-  }, []);
   return (
     <>
-      <Header />
-      <MobileHeader />
-      <Hero />
-      <Container1 />
-      <Container2 />
-      <Container3 />
-      <Container4 />
-      <Container5 />
-      <Container6 />
-      <Contact />
-      <Container7 />
-      <Footer />
-      {/* <BtnComponent
-        buttonText="Our Services"
-        borderColor="rgba(255, 255, 255, 0.6)"
-        bg="transparent"
-        color="#fff"
-        arrow={true}
-      />
-      <BtnComponent
-        buttonText="Our Services"
-        borderColor="rgba(255, 255, 255, 0.6)"
-        bg="transparent"
-        color="#fff"
-      /> */}
+      <div>
+        <Header />
+        <MobileHeader />
+        <Hero />
+        <Container1 />
+        <Container2 />
+        <Container3 />
+        <Container4 />
+        <Container5 />
+        <Container6 />
+        <Contact />
+        <Container7 />
+        <Footer />
+      </div>
     </>
-    //  {/* <SectionName sectionText="Services" width="50vw" />
-    // <SectionTitle sectionText="Our Capabilities" />
-    // <SectionDescription sectionText="sdklfjsdklfajlskdfjsdlkfjls" />
-    // <CardHeading sectionText="Our Capabilities" />
-    // <BtnComponent
-    //   buttonText="Our Services"
-    //   borderColor="rgba(255, 255, 255, 0.6)"
-    //   bg="transparent"
-    //   color="#fff"
-    // />  */}
   );
 }

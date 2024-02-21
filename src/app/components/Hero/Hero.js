@@ -58,7 +58,7 @@ const Hero = () => {
         hoverDuration="1700"
         duration="800"
       /> */}
-      <New />
+      {/* <New /> */}
     </>
   );
 };
