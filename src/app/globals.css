@@ -205,6 +205,7 @@ a {
   height: 33.06878306878307vw;
   z-index: -1;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .new::before {
@@ -224,6 +225,7 @@ a {
 .btnContainer:hover::before {
   top: -6vw;
   left: -6vw;
+  overflow: hidden;
 }
 
 .arrow {

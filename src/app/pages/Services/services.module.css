@@ -135,23 +135,6 @@
   letter-spacing: var(--letterSpace18);
 }
 
-.descContainer span {
-  color: rgba(255, 255, 255, 0.6);
-  background-clip: text;
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  background-image: linear-gradient(90deg, rgba(96, 122, 159, 1), rgba(96, 122, 159, 1));
-  animation: textSrollReveal linear forwards;
-  animation-timeline: view(100px);
-  animation-range: contain;
-}
-
-@keyframes textSrollReveal {
-  to {
-    background-size: 100% 100%;
-  }
-}
-
 .card hr {
   width: 100%;
   margin-top: 2.6455026455026456vw;
