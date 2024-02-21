@@ -28,7 +28,6 @@ const Container1 = () => {
         alt="ImageClients"
         className={styles.aboutImg}
       />
-      <div className={styles.descContainer}>
         {/* <SectionDescription
           sectionText={container1Data.description1}
           width="66.13756613756614vw"
@@ -40,6 +39,7 @@ const Container1 = () => {
           sectionText={container1Data.description2}
           width="66.13756613756614vw"
         /> */}
+      <div className={styles.descContainer}>
         <p>
           <span className={styles.span1}>{container1Data.description1}</span>
         </p>

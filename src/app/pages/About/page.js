@@ -15,7 +15,6 @@ import Contact from "@/app/components/Contact/Contact";
 import Footer from "@/app/components/Footer/Footer";
 
 const page = () => {
-
   return (
     <>
       <Header />
@@ -30,7 +29,7 @@ const page = () => {
           alt="ImageClients"
           className={styles.aboutImg}
         />
-        <SectionDescription
+        {/* <SectionDescription
           sectionText={container1.description1}
           width="66.13756613756614vw"
           margin="6.613756613756613vw 0 0 0"
@@ -40,7 +39,16 @@ const page = () => {
         <SectionDescription
           sectionText={container1.description2}
           width="66.13756613756614vw"
-        />
+        /> */}
+        <div className={styles.descContainer}>
+          <p>
+            <span className={styles.span1}>{container1.description1}</span>
+          </p>
+          <br />
+          <p>
+            <span className={styles.span2}>{container1.description2}</span>
+          </p>
+        </div>
       </div>
 
       <div className={`${styles.container2} `}>

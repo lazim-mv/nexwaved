@@ -65,6 +65,47 @@
   height: 39.682539682539684vw;
 }
 
+.descContainer {
+  margin-top: 6.613756613756613vw;
+  width: 66.13756613756614vw;
+}
+
+.descContainer .span1 {
+  color: rgba(255, 255, 255, 0.6);
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1)
+  );
+  animation: textSrollReveal linear forwards;
+  animation-timeline: view();
+  animation-range: 10vh 50vh;
+}
+
+.descContainer .span2 {
+  color: rgba(255, 255, 255, 0.6);
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1)
+  );
+  animation: textSrollReveal linear forwards;
+  animation-timeline: view();
+  animation-range: 50vh 90vh;
+}
+
+@keyframes textSrollReveal {
+  to {
+    background-size: 100% 100%;
+  }
+}
+
 .container2 {
   padding: var(--containerPadding);
   margin-top: var(--containerMarginTop);
@@ -161,9 +202,14 @@
     width: auto !important;
   }
 
-  .container p:nth-child(1) {
-    margin: 5.333333333333334vw 0 0 0 !important;
+  .descContainer {
+    margin-top: 5.333333333333334vw;
+    width: auto;
   }
+
+  /* .container p:nth-child(1) {
+    margin: 5.333333333333334vw 0 0 0 !important;
+  } */
 
   .aboutImg {
     height: 106.66666666666667vw;

@@ -152,10 +152,8 @@ const Page = () => {
               </div>
               <SectionTitle sectionText={data.sectionTitle} />
               <div className={styles.descContainer}>
-                {/* <SectionDescription sectionText={data.description1} /> */}
-                {/* <SectionDescription sectionText={data.description2} /> */}
-                <p><span>{data.description1}</span></p>
-                <p><span>{data.description2}</span></p>
+                <SectionDescription sectionText={data.description1} />
+                <SectionDescription sectionText={data.description2} />
               </div>
               <hr />
             </div>
