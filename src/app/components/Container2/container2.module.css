@@ -90,12 +90,18 @@
   width: 1.6494708994708995vw;
 }
 
-.serviceImg {
+.serviceImgContainer {
   position: absolute;
   width: 27.18253968253968vw;
   height: 29.761904761904763vw;
+  overflow: hidden;
   right: 0;
   top: 0;
+}
+
+.serviceImg {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -148,14 +154,19 @@
     width: 79.2vw !important;
   }
 
-  .serviceImg {
+  .serviceImgContainer{
     width: 79.2vw;
     height: 86.74400000000001vw;
     margin-top: 4vw;
     position: relative;
   }
 
-  .forMobileButton{
+  .serviceImg{
+    width: 100%;
+    height: 100%;
+  }
+
+  .forMobileButton {
     width: 100%;
     display: flex;
     justify-content: center;

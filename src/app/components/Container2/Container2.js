@@ -88,14 +88,16 @@ const Container2 = () => {
               />
             </div>
             {answerVisible[index] && (
-              <Image
-                unoptimized
-                src={data.img}
-                width={100}
-                height={0}
-                alt="ImageClients"
-                className={styles.serviceImg}
-              />
+              <div className={`${styles.serviceImgContainer}`}>
+                <Image
+                  unoptimized
+                  src={data.img}
+                  width={100}
+                  height={0}
+                  alt="ImageClients"
+                  className={styles.serviceImg}
+                />
+              </div>
             )}
           </div>
         ))}
