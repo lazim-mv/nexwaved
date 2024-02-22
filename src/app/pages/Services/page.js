@@ -15,11 +15,12 @@ import Container3 from "@/app/components/Container3/Container3";
 import Footer from "@/app/components/Footer/Footer";
 import Contact from "@/app/components/Contact/Contact";
 import { useLenis } from "@studio-freight/react-lenis";
-// import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import ScrollMagic from "scrollmagic";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollMagic from "scrollmagic";
+import RevealComponent from "@/app/components/RevealComponent/RevealComponent";
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 const Page = () => {
   // const cardImg = useRef([]);
   // let lastScrollTop;
@@ -59,7 +60,7 @@ const Page = () => {
   //         document.querySelector(
   //           `.services_serviceImg__6oB7L`
   //         ).dataset.translateValue = translateValue.toString();
-  //           console.log(translateValue,"tl")
+  //         console.log(translateValue, "tl");
   //         return translateValue;
   //       },
   //       scrollTrigger: {
@@ -200,16 +201,18 @@ const Page = () => {
           {container2.cardData.map((data, index) => (
             <div className={styles.card} key={index} id={data.id}>
               <div className={styles.serviceImgContainer}>
-                <Image
-                  // ref={(ref) => (cardImg.current[index] = ref)}
-                  unoptimized
-                  src={data.img}
-                  priority={true}
-                  width={100}
-                  height={0}
-                  alt="ImageClients"
-                  className={styles.serviceImg}
-                />
+                <RevealComponent speed={1.5}>
+                  <Image
+                    // ref={(ref) => (cardImg.current[index] = ref)}
+                    unoptimized
+                    src={data.img}
+                    priority={true}
+                    width={100}
+                    height={0}
+                    alt="ImageClients"
+                    className={styles.serviceImg}
+                  />
+                </RevealComponent>
               </div>
               <SectionTitle sectionText={data.sectionTitle} />
               <div className={styles.descContainer}>
