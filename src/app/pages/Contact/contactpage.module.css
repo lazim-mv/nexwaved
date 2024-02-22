@@ -150,6 +150,9 @@
   transition: border-bottom 0.3s ease;
   outline: none;
   height: 3.835978835978836vw;
+  font-size: 1.3227513227513228vw;
+  line-height: 1.8518518518518516vw;
+  letter-spacing: 0.026455026455026457vw;
 }
 
 .textFields input:-webkit-autofill,
@@ -298,12 +301,18 @@
     padding-bottom: 4vw;
     border-bottom: 0.26666666666666666vw solid rgba(255, 255, 255, 0.6);
     height: 9.333333333333334vw;
+    font-size: var(--mfont14);
+    line-height: var(--mlineHeight14);
+    letter-spacing: var(--mletterSpace14);
   }
 
   .textFields textarea {
     width: auto;
     /* padding-bottom: 18.666666666666668vw; */
     height: 22.666666666666664vw;
+    font-size: var(--mfont14);
+    line-height: var(--mlineHeight14);
+    letter-spacing: var(--mletterSpace14);
   }
 
   .contactSection {

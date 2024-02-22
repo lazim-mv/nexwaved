@@ -117,6 +117,8 @@
   transition: 1s ease;
   /* scale: 2; */
   object-position: bottom;
+  /* transform: translate3d(0px, -100px, 0px); */
+
 }
 
 .card h2 {
