@@ -15,11 +15,11 @@ import Container3 from "@/app/components/Container3/Container3";
 import Footer from "@/app/components/Footer/Footer";
 import Contact from "@/app/components/Contact/Contact";
 import { useLenis } from "@studio-freight/react-lenis";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ScrollMagic from "scrollmagic";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import ScrollMagic from "scrollmagic";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 const Page = () => {
   // const cardImg = useRef([]);
   // let lastScrollTop;
@@ -201,7 +201,7 @@ const Page = () => {
             <div className={styles.card} key={index} id={data.id}>
               <div className={styles.serviceImgContainer}>
                 <Image
-                  ref={(ref) => (cardImg.current[index] = ref)}
+                  // ref={(ref) => (cardImg.current[index] = ref)}
                   unoptimized
                   src={data.img}
                   priority={true}
