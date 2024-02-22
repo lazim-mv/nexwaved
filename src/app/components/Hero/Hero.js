@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import styles from "./hero.module.css";
 import { BtnComponent, SectionDescription } from "../ButtonComponent";
 import { heroData } from "../../Content/content";
@@ -16,11 +16,11 @@ const Hero = () => {
   const texts = heroData.texts;
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const interval = setInterval(() => {
       setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
     }, 2500);
-
+  
     return () => clearInterval(interval);
   }, []);
   const { windowSize, isSmallScreen } = useWindowSize();

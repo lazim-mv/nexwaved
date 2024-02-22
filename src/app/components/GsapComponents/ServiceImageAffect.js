@@ -2,9 +2,16 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useWindowSize } from "@react-hook/window-size"; // Import useWindowSize hook
+import { useWindowSize } from "@react-hook/window-size"; 
 
-const RevealComponent = ({ children, speed = 1, id = "reveal", className }) => {
+const ServiceImageAffect = ({
+  children,
+  speed = 1,
+  id = "reveal",
+  className,
+  height,
+  width,
+}) => {
   const trigger = useRef();
   const target = useRef();
 
@@ -23,6 +30,7 @@ const RevealComponent = ({ children, speed = 1, id = "reveal", className }) => {
         scrub: true,
         start: "top bottom",
         end: "bottom top",
+        // markers: true,
         onUpdate: (e) => {
           setY((1 - e.progress) * y);
         },
@@ -30,17 +38,20 @@ const RevealComponent = ({ children, speed = 1, id = "reveal", className }) => {
     });
 
     return () => {
-      timeline?.kill(); 
+      timeline?.kill();
     };
   }, [id, speed, windowHeight]);
 
   return (
     <div ref={trigger} className={className}>
-      <div ref={target} style={{ transform: "translateY(100%)" }}>
+      <div
+        ref={target}
+        style={{ transform: "translateY(100%)", height: height, width: width }}
+      >
         {children}
       </div>
     </div>
   );
 };
 
-export default RevealComponent;
+export default ServiceImageAffect;

@@ -19,7 +19,7 @@ const BtnComponent = ({
 }) => {
   useEffect(() => {});
   const { windowSize, isSmallScreen } = useWindowSize();
-
+  console.log(isSmallScreen,"btn")
   return (
     <div
       className={`btnContainer ${contact ? "new" : ""}`}

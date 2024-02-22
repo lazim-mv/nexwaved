@@ -12,9 +12,9 @@ import Footer from "./components/Footer/Footer";
 import Container4 from "./components/Container4/Container4";
 import MobileHeader from "./components/MobileHeader/MobileHeader";
 import { useEffect } from "react";
+import RevealAffect from "./components/GsapComponents/RevealAffect";
 // import { isIOS } from "./utils/iosCheck";
 // import { BtnComponent } from "./components/ButtonComponent";
-
 
 export default function Home() {
   return (
@@ -23,13 +23,25 @@ export default function Home() {
         <Header />
         <MobileHeader />
         <Hero />
-        <Container1 />
-        <Container2 />
-        <Container3 />
-        <Container4 />
-        <Container5 />
+        <RevealAffect>
+          <Container1 />
+        </RevealAffect>
+        <RevealAffect start={80} end={70}>
+          <Container2 />
+        </RevealAffect>
+        <RevealAffect>
+          <Container3 />
+        </RevealAffect>
+        <RevealAffect>
+          <Container4 />
+        </RevealAffect>
+        <RevealAffect>
+          <Container5 />
+        </RevealAffect>
         <Container6 />
-        <Contact />
+        <RevealAffect>
+          <Contact />
+        </RevealAffect>
         <Container7 />
         <Footer />
       </div>

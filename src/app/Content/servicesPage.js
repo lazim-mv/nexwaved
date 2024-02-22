@@ -5,13 +5,10 @@ const container1 = {
     "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
 };
 const container2 = {
-  btnText1: "Digital Strategy",
-  btnText2: "Designing",
-  btnText3: "Development",
-  btnText4: "Marketing",
   cardData: [
     {
-      id:"one",
+      id: "DigitalStrategy",
+      btnText: "Digital Strategy",
       img: "/ServicePage/nexwave/1.png",
       sectionTitle: "Digital Strategy",
       description1:
@@ -20,7 +17,8 @@ const container2 = {
         "Art Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral DesignArt Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral Design",
     },
     {
-     id:"two",
+      id: "Designing",
+      btnText: "Designing",
       img: "/ServicePage/nexwave/2.png",
       sectionTitle: "Digital Strategy",
       description1:
@@ -29,7 +27,8 @@ const container2 = {
         "Art Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral DesignArt Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral Design",
     },
     {
-     id:"three",
+      id: "Development",
+      btnText: "Development",
       img: "/ServicePage/nexwave/3.png",
       sectionTitle: "Digital Strategy",
       description1:
@@ -38,7 +37,8 @@ const container2 = {
         "Art Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral DesignArt Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral Design",
     },
     {
-     id:"four",
+      id: "Marketing",
+      btnText: "Marketing",
       img: "/ServicePage/nexwave/4.png",
       sectionTitle: "Digital Strategy",
       description1:
