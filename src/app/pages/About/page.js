@@ -13,23 +13,25 @@ import {
 } from "@/app/components/ButtonComponent";
 import Contact from "@/app/components/Contact/Contact";
 import Footer from "@/app/components/Footer/Footer";
+import RevealAffect from "@/app/components/GsapComponents/RevealAffect";
 
 const page = () => {
   return (
     <>
       <Header />
       <MobileHeader />
-      <div className={`${styles.container} `}>
-        <SectionTitle sectionText={container1.sectionTitle} />
-        <Image
-          unoptimized
-          src={container1.img}
-          width={100}
-          height={0}
-          alt="ImageClients"
-          className={styles.aboutImg}
-        />
-        {/* <SectionDescription
+      <RevealAffect>
+        <div className={`${styles.container} `}>
+          <SectionTitle sectionText={container1.sectionTitle} />
+          <Image
+            unoptimized
+            src={container1.img}
+            width={100}
+            height={0}
+            alt="ImageClients"
+            className={styles.aboutImg}
+          />
+          {/* <SectionDescription
           sectionText={container1.description1}
           width="66.13756613756614vw"
           margin="6.613756613756613vw 0 0 0"
@@ -40,57 +42,63 @@ const page = () => {
           sectionText={container1.description2}
           width="66.13756613756614vw"
         /> */}
-        <div className={styles.descContainer}>
-          <p>
-            <span className={styles.span1}>{container1.description1}</span>
-          </p>
-          <br />
-          <p>
-            <span className={styles.span2}>{container1.description2}</span>
-          </p>
+          <div className={styles.descContainer}>
+            <p>
+              <span className={styles.span1}>{container1.description1}</span>
+            </p>
+            <br />
+            <p>
+              <span className={styles.span2}>{container1.description2}</span>
+            </p>
+          </div>
         </div>
-      </div>
+      </RevealAffect>
 
-      <div className={`${styles.container2} `}>
-        <div className={styles.vision}>
-          <SectionTitle sectionText={container2.vision.sectionTitle} />
-          <SectionDescription sectionText={container2.vision.description} />
-        </div>
-        <div className={styles.mission}>
-          <SectionTitle sectionText={container2.mission.sectionTitle} />
-          <SectionDescription sectionText={container2.mission.description} />
-        </div>
-        <div className={styles.imgContainer}>
-          <Image
-            unoptimized
-            src={container2.img}
-            width={100}
-            height={0}
-            alt="ImageClients"
-            className={styles.visionMission}
-          />
-        </div>
-      </div>
-
-      <div className={`${styles.container3} `}>
-        <SectionTitle sectionText={container3.sectionTitle} />
-        {container3.cardData.map((data, index) => (
-          <div className={styles.vCard} key={index}>
+      <RevealAffect>
+        <div className={`${styles.container2} `}>
+          <div className={styles.vision}>
+            <SectionTitle sectionText={container2.vision.sectionTitle} />
+            <SectionDescription sectionText={container2.vision.description} />
+          </div>
+          <div className={styles.mission}>
+            <SectionTitle sectionText={container2.mission.sectionTitle} />
+            <SectionDescription sectionText={container2.mission.description} />
+          </div>
+          <div className={styles.imgContainer}>
             <Image
               unoptimized
-              src={data.img}
+              src={container2.img}
               width={100}
               height={0}
               alt="ImageClients"
-              className={styles.icon}
+              className={styles.visionMission}
             />
-            <CardHeading sectionText={data.cardHeading} />
-            <SectionDescription sectionText={data.description} />
           </div>
-        ))}
-      </div>
+        </div>
+      </RevealAffect>
 
-      <Contact page={true}/>
+      <RevealAffect>
+        <div className={`${styles.container3} `}>
+          <SectionTitle sectionText={container3.sectionTitle} />
+          {container3.cardData.map((data, index) => (
+            <div className={styles.vCard} key={index}>
+              <Image
+                unoptimized
+                src={data.img}
+                width={100}
+                height={0}
+                alt="ImageClients"
+                className={styles.icon}
+              />
+              <CardHeading sectionText={data.cardHeading} />
+              <SectionDescription sectionText={data.description} />
+            </div>
+          ))}
+        </div>
+      </RevealAffect>
+      <RevealAffect>
+        <Contact page={true} />
+      </RevealAffect>
       <Footer />
     </>
   );
