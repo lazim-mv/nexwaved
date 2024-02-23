@@ -47,7 +47,7 @@ const RevealAffect = ({
         start: `top ${start ? start : 90}%`,
         end: `center ${end ? end : 20}%`,
         scrub: true,
-        markers:true
+        // markers:true
       },
     });
 
