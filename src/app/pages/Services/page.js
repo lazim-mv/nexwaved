@@ -19,6 +19,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useWindowSize } from "@/app/utils/windowSize";
 import ServiceImageAffect from "@/app/components/GsapComponents/ServiceImageAffect";
+import RevealAffect from "@/app/components/GsapComponents/RevealAffect";
 
 gsap.registerPlugin(ScrollTrigger);
 const Page = () => {
@@ -67,22 +68,24 @@ const Page = () => {
           {container2.cardData.map((data, index) => (
             <div className={styles.card} key={index} id={data.id}>
               <div className={styles.serviceImgContainer}>
-                <ServiceImageAffect
-                  speed={isSmallScreen ? 0.8 : 1.2 }
-                  height={isSmallScreen ? "80vw" : "auto"}
-                  width={isSmallScreen ? "87.2vw" : "auto"}
-                >
-                  <Image
-                    // ref={(ref) => (cardImg.current[index] = ref)}
-                    unoptimized
-                    src={data.img}
-                    priority={true}
-                    width={100}
-                    height={0}
-                    alt="ImageClients"
-                    className={styles.serviceImg}
-                  />
-                </ServiceImageAffect>
+                <RevealAffect>
+                  <ServiceImageAffect
+                    speed={isSmallScreen ? 0.8 : 1.2}
+                    height={isSmallScreen ? "80vw" : "auto"}
+                    width={isSmallScreen ? "87.2vw" : "auto"}
+                  >
+                    <Image
+                      // ref={(ref) => (cardImg.current[index] = ref)}
+                      unoptimized
+                      src={data.img}
+                      priority={true}
+                      width={100}
+                      height={0}
+                      alt="ImageClients"
+                      className={styles.serviceImg}
+                    />
+                  </ServiceImageAffect>
+                </RevealAffect>
               </div>
               <SectionTitle sectionText={data.sectionTitle} />
               <div className={styles.descContainer}>
@@ -94,10 +97,15 @@ const Page = () => {
           ))}
         </div>
       </div>
-
-      <Container6 />
-      <Container3 />
-      <Contact page={true} />
+      <RevealAffect endTop="10%">
+        <Container6 />
+      </RevealAffect>
+      <RevealAffect>
+        <Container3 />
+      </RevealAffect>
+      <RevealAffect>
+        <Contact page={true} />
+      </RevealAffect>
       <Footer />
     </>
   );

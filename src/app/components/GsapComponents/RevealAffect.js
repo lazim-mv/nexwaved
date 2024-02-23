@@ -13,6 +13,7 @@ const RevealAffect = ({
   width,
   start,
   end,
+  endTop,
 }) => {
   const trigger = useRef();
   const target = useRef();
@@ -45,9 +46,9 @@ const RevealAffect = ({
       scrollTrigger: {
         trigger: trigger.current,
         start: `top ${start ? start : 90}%`,
-        end: `center ${end ? end : 20}%`,
+        end: `${endTop ? endTop : "center"} ${end ? end : 20}%`,
         scrub: true,
-        // markers:true
+        // markers: true,
       },
     });
 
@@ -61,7 +62,7 @@ const RevealAffect = ({
       <div
         ref={target}
         style={{
-          transform: "translateY(500%)",
+          transform: "translateY(00%)",
           opacity: 0,
           height: height,
           width: width,
