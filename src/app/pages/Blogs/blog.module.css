@@ -77,6 +77,9 @@
 
   .container p {
     text-align: left;
+    font-size: var(--mfont12);
+    line-height: var(--mlineHeight12);
+    letter-spacing: var(--mletterSpace12);
   }
 
   .blogImage {

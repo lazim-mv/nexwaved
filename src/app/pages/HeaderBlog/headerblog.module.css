@@ -46,11 +46,11 @@
   --mletterSpace18: 0.4266666666666667vw;
 }
 
-.lodingContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: var(--margin100);
+.lodingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--margin100);
 }
 
 .container {
@@ -79,15 +79,18 @@
     flex-direction: column;
   }
 
-  .container h2{
+  .container h2 {
     text-align: left;
   }
 
-  .container p{
+  .container p {
     text-align: left;
     height: 27.200000000000003vw;
     margin-top: 2.666666666666667vw;
     margin-bottom: var(--margin20);
+    font-size: var(--mfont12);
+    line-height: var(--mlineHeight12);
+    letter-spacing: var(--mletterSpace12);
   }
 
   .blogImage {
