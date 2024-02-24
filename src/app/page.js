@@ -13,12 +13,14 @@ import Container4 from "./components/Container4/Container4";
 import MobileHeader from "./components/MobileHeader/MobileHeader";
 import { useEffect } from "react";
 import RevealAffect from "./components/GsapComponents/RevealAffect";
+import LoadingAnimation from "./components/LoadingAnimation/LoadingAnimation";
 // import { isIOS } from "./utils/iosCheck";
 // import { BtnComponent } from "./components/ButtonComponent";
 
 export default function Home() {
   return (
     <>
+      <LoadingAnimation />
       <div>
         <Header />
         <MobileHeader />

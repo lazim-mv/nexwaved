@@ -92,6 +92,8 @@
   color: #fff;
   margin-bottom: var(--margin20);
   font-weight: 400;
+  height: 4.5vw;
+  overflow: hidden;
 }
 
 .card a {
@@ -168,6 +170,7 @@
     color: #fff;
     margin-bottom: var(--margin20);
     font-weight: 400;
+    height: 12vw;
   }
 
   .card a {
@@ -181,7 +184,7 @@
     display: inline-block;
   }
 
-  .btnCenter{
+  .btnCenter {
     width: 100%;
     display: flex;
     justify-content: center;
