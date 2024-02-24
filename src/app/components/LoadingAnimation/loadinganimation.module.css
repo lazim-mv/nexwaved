@@ -76,7 +76,6 @@
   line-height: var(--lineHeight18);
   letter-spacing: var(--letterSpace18);
   color: #cad5da;
-  color: #fff;
 }
 
 .white {
@@ -84,7 +83,6 @@
   height: 6.283068783068783vw;
   position: absolute;
   background-color: #acb7bc;
-  background-color: #fff;
   transform: translate(-100%, 0);
   z-index: -1;
 }
@@ -98,7 +96,6 @@
   letter-spacing: 0.1px;
   letter-spacing: 0.8;
   color: #cad5da;
-  color: #fff;
 }
 
 .child {
