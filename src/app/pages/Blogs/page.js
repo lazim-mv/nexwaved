@@ -13,7 +13,7 @@ import Image from "next/image";
 import Container7 from "@/app/components/Container7/Container7";
 import { urlFor } from "@/app/api/blog";
 
-const page = () => {
+const Page = () => {
   const [dataArray, setDataArray] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -71,4 +71,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
