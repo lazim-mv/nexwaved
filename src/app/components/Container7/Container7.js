@@ -57,8 +57,10 @@ const Container7 = ({ header, blogPage }) => {
       <div
         className={styles.cards}
         style={{
-          flexDirection: isSmallScreen && header ? "column" : "",
-          flexDirection: isSmallScreen && blogPage ? "column" : "",
+          flexDirection:
+            (isSmallScreen && header) || (isSmallScreen && blogPage)
+              ? "column"
+              : "row",
         }}
       >
         {blogData.map((data, index) => (
@@ -75,10 +77,13 @@ const Container7 = ({ header, blogPage }) => {
               <div
                 className={styles.imgContainer}
                 style={{
-                  width: isSmallScreen && header && "87.2vw",
-                  height: isSmallScreen && header && "73.33333333333333vw",
-                  width: isSmallScreen && blogPage && "87.2vw",
-                  height: isSmallScreen && blogPage && "73.33333333333333vw",
+                  width: (isSmallScreen && header) || (isSmallScreen && blogPage) ? "87.2vw" : "",
+                  height: (isSmallScreen && header) || (isSmallScreen && blogPage) ? "73.33333333333333vw" : "",
+
+                  // width: isSmallScreen && header && "87.2vw",
+                  // height: isSmallScreen && header && "73.33333333333333vw",
+                  // width: isSmallScreen && blogPage && "87.2vw",
+                  // height: isSmallScreen && blogPage && "73.33333333333333vw",
                 }}
               >
                 <Image
