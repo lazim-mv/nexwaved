@@ -65,7 +65,7 @@ const LoadingAnimation = ({ children }) => {
           ease: "power2.inOut",
         });
         gsap.to(".loadinganimation_count__IogK3", {
-          y: "150%",
+          y: "550%",
           duration: .6,
           ease: "power2.inOut",
         });

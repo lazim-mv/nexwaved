@@ -102,14 +102,13 @@
   opacity: 0;
 }
 
-
 @media only screen and (max-width: 767px) {
-  .nav{
+  .nav {
     height: 21.333333333333336vw;
     padding: var(--mobileContainerPadding);
   }
 
-  .white{
+  .white {
     height: 21.333333333333336vw;
   }
 
@@ -121,9 +120,12 @@
     width: 35%;
   }
 
-  .count{
-    font-size: 26.666666666666668vw;
-    right: 10vw;
-    bottom: 10vw;
+  .count {
+    font-size: 50vw;
+    right: auto;
+    bottom: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
