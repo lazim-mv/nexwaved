@@ -5,7 +5,7 @@ import { CardHeading } from "../ButtonComponent";
 import Image from "next/image";
 import gsap from "gsap";
 
-const LoadingAnimation = () => {
+const LoadingAnimation = ({ children }) => {
   const [count, setCount] = useState(0);
   const totalTime = 3000;
   const startTime = Date.now();
@@ -56,7 +56,12 @@ const LoadingAnimation = () => {
           ease: "power2.inOut",
         });
         gsap.to(".loadinganimation_container__qQ6yo", {
-          display: "none",
+          opacity: 0,
+          duration: 1,
+          ease: "power2.inOut",
+        });
+        gsap.to(".loadinganimation_child__1qOTU", {
+          opacity: 1,
           duration: 1,
           ease: "power2.inOut",
         });
@@ -83,6 +88,7 @@ const LoadingAnimation = () => {
         </div>
         <h1 className={styles.count}>{count}</h1>
       </div>
+      <div className={styles.child}>{children}</div>
     </>
   );
 };

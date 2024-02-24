@@ -20,33 +20,34 @@ import LoadingAnimation from "./components/LoadingAnimation/LoadingAnimation";
 export default function Home() {
   return (
     <>
-      <LoadingAnimation />
-      <div>
-        <Header />
-        <MobileHeader />
-        <Hero />
-        <RevealAffect>
-          <Container1 />
-        </RevealAffect>
-        <RevealAffect start={80} end={70}>
-          <Container2 />
-        </RevealAffect>
-        <RevealAffect>
-          <Container3 />
-        </RevealAffect>
-        <RevealAffect>
-          <Container4 />
-        </RevealAffect>
-        <RevealAffect>
-          <Container5 />
-        </RevealAffect>
-        <Container6 />
-        <RevealAffect>
-          <Contact />
-        </RevealAffect>
-        <Container7 />
-        <Footer />
-      </div>
+      <LoadingAnimation>
+        <div>
+          <Header />
+          <MobileHeader />
+          <Hero />
+          <RevealAffect>
+            <Container1 />
+          </RevealAffect>
+          <RevealAffect start={80} end={70}>
+            <Container2 />
+          </RevealAffect>
+          <RevealAffect>
+            <Container3 />
+          </RevealAffect>
+          <RevealAffect>
+            <Container4 />
+          </RevealAffect>
+          <RevealAffect>
+            <Container5 />
+          </RevealAffect>
+          <Container6 />
+          <RevealAffect>
+            <Contact />
+          </RevealAffect>
+          <Container7 />
+          <Footer />
+        </div>
+      </LoadingAnimation>
     </>
   );
 }
