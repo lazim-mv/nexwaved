@@ -67,21 +67,22 @@
   z-index: 1;
 }
 
-.logoContainer{
-    position: relative;
+.logoContainer {
+  position: relative;
 }
 
-.nav h3{
-    font-size: var(--font18);
-    line-height: var(--lineHeight18);
-    letter-spacing: var(--letterSpace18);
+.nav h3 {
+  font-size: var(--font18);
+  line-height: var(--lineHeight18);
+  letter-spacing: var(--letterSpace18);
+  color: #cad5da;
 }
 
 .white {
   width: 100%;
   height: 6.283068783068783vw;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #acb7bc;
   transform: translate(-100%, 0);
   z-index: -1;
 }
@@ -94,9 +95,9 @@
   line-height: 75%;
   letter-spacing: 0.1px;
   letter-spacing: 0.8;
-  color: rgba(255, 255, 255, 0.4);
+  color: #cad5da;
 }
 
-.child{
-    opacity: 0;
+.child {
+  opacity: 0;
 }

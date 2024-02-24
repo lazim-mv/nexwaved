@@ -30,6 +30,10 @@ const Page = () => {
 
   useEffect(() => {
     console.log(dataArray, "Link clickeddddd");
+
+    if (dataArray.titleImage) {
+      console.log(urlFor(dataArray.titleImage).url(), "LinkImg clickeddddd");
+    }
   }, [dataArray]);
 
   if (loading) {
@@ -49,8 +53,7 @@ const Page = () => {
               className={styles.blogImage}
             />
           )}
-          {/* <SectionDescription sectionText="Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!" />
-          <br /> */}
+
           <SectionDescription sectionText={dataArray.description} />
         </div>
         <Container7 />
