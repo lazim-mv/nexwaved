@@ -42,7 +42,7 @@ const Page = () => {
           {dataArray.titleImage && (
             <Image
               unoptimized
-              src={urlFor(data.titleImage).url()}
+              src={urlFor(dataArray.titleImage).url()}
               width={100}
               height={0}
               alt="blogImage"
