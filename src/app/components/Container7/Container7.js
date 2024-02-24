@@ -43,13 +43,15 @@ const Container7 = ({ header, blogPage }) => {
           }
         />
         {!isSmallScreen && !header && (
-          <BtnComponent
-            buttonText={container7Data.btnText}
-            borderColor="rgba(255, 255, 255, 0.6)"
-            bg="transparent"
-            color="#fff"
-            arrow={true}
-          />
+          <a href="pages/HeaderBlog">
+            <BtnComponent
+              buttonText={container7Data.btnText}
+              borderColor="rgba(255, 255, 255, 0.6)"
+              bg="transparent"
+              color="#fff"
+              arrow={true}
+            />
+          </a>
         )}
       </div>
       <div
@@ -60,51 +62,55 @@ const Container7 = ({ header, blogPage }) => {
         }}
       >
         {blogData.map((data, index) => (
-          <div className={styles.card} key={index}>
-            <div
-              className={styles.imgContainer}
-              style={{
-                width: isSmallScreen && header && "87.2vw",
-                height: isSmallScreen && header && "73.33333333333333vw",
-                width: isSmallScreen && blogPage && "87.2vw",
-                height: isSmallScreen && blogPage && "73.33333333333333vw",
-              }}
-            >
-              <Image
-                unoptimized
-                src={urlFor(data.titleImage).url()}
-                width={100}
-                height={0}
-                alt="blogImage"
-                className={styles.blogImage}
-              />
-            </div>
-            <div className={styles.content}>
-              <h6>{data.title}</h6>
-              <Link
-                href={{
-                  pathname: "/pages/Blogs",
-                  search: `?search=${JSON.stringify(data)}`,
+          <Link
+            href={{
+              pathname: "/pages/Blogs",
+              search: `?search=${JSON.stringify(data)}`,
+            }}
+            target="_blank"
+            onClick={() => console.log("Link clicked:")}
+            key={index}
+          >
+            <div className={styles.card}>
+              <div
+                className={styles.imgContainer}
+                style={{
+                  width: isSmallScreen && header && "87.2vw",
+                  height: isSmallScreen && header && "73.33333333333333vw",
+                  width: isSmallScreen && blogPage && "87.2vw",
+                  height: isSmallScreen && blogPage && "73.33333333333333vw",
                 }}
-                target="_blank"
-                onClick={() => console.log("Link clicked:")}
               >
-                {container7Data.btnText1}
-              </Link>
+                <Image
+                  unoptimized
+                  src={urlFor(data.titleImage).url()}
+                  width={100}
+                  height={0}
+                  alt="blogImage"
+                  className={styles.blogImage}
+                />
+              </div>
+              <div className={styles.content}>
+                <h6>{data.title}</h6>
+
+                <p className={styles.readMore}>{container7Data.btnText1}</p>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       {isSmallScreen && !header && (
         <div className={styles.btnCenter}>
-          <BtnComponent
-            buttonText={container7Data.btnText}
-            borderColor="rgba(255, 255, 255, 0.6)"
-            bg="transparent"
-            color="#fff"
-            arrow={true}
-            margin="0 auto"
-          />
+          <a href="pages/HeaderBlog">
+            <BtnComponent
+              buttonText={container7Data.btnText}
+              borderColor="rgba(255, 255, 255, 0.6)"
+              bg="transparent"
+              color="#fff"
+              arrow={true}
+              margin="0 auto"
+            />
+          </a>
         </div>
       )}
     </div>

@@ -96,7 +96,7 @@
   overflow: hidden;
 }
 
-.card a {
+.card .readMore {
   font-size: var(--font18);
   line-height: var(--lineHeight18);
   letter-spacing: var(--letterSpace18);
@@ -107,7 +107,7 @@
   display: inline-block;
 }
 
-.card a::after {
+.card .readMore::after {
   content: "";
   display: block;
   width: 100%;
@@ -117,11 +117,11 @@
   bottom: 0;
 }
 
-.card a:hover::after {
+.card .readMore:hover::after {
   border-bottom: 1px solid rgba(255, 255, 255, 1);
 }
 
-.card a:hover {
+.card .readMore:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -173,7 +173,7 @@
     height: 12vw;
   }
 
-  .card a {
+  .card .readMore {
     font-size: var(--mfont12);
     line-height: var(--mlineHeight12);
     letter-spacing: var(--mletterSpace12);

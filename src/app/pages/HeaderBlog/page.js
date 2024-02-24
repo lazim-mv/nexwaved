@@ -13,6 +13,7 @@ import {
 } from "@/app/components/ButtonComponent";
 import fetchDataAndExport, { urlFor } from "@/app/api/blog";
 import Image from "next/image";
+import Link from "next/link";
 
 const Page = () => {
   const [blogData, setBlogData] = useState({});
@@ -59,14 +60,23 @@ const Page = () => {
           <div className={styles.content}>
             <SectionTitle sectionText={blogData.title} />
             <SectionDescription sectionText={blogData.description} />
-            <BtnComponent
-              buttonText="Read More"
-              borderColor="rgba(255, 255, 255, 0.6)"
-              bg="transparent"
-              color="#fff"
-              margin="1.5873015873015872vw 0 0 0"
-              arrow={true}
-            />
+            <Link
+              href={{
+                pathname: "/pages/Blogs",
+                search: `?search=${JSON.stringify(blogData)}`,
+              }}
+              target="_blank"
+              onClick={() => console.log("Link clicked:")}
+            >
+              <BtnComponent
+                buttonText="Read More"
+                borderColor="rgba(255, 255, 255, 0.6)"
+                bg="transparent"
+                color="#fff"
+                margin="1.5873015873015872vw 0 0 0"
+                arrow={true}
+              />
+            </Link>
           </div>
         </div>
 

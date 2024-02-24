@@ -81,6 +81,12 @@ const LoadingAnimation = ({ children }) => {
           delay:0.4,
           ease: "power2.inOut",
         });
+        gsap.to(".loadinganimation_container__qQ6yo", {
+          display: "none",
+          duration: 0,
+          delay:3.2,
+          ease: "power2.inOut",
+        });
       },
     });
   }, []);
