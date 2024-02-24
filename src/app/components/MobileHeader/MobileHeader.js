@@ -25,7 +25,7 @@ function MobileHeader() {
     { text: "Home", href: "/" },
     { text: "About Us", href: "/pages/About" },
     { text: "Services", href: "/pages/Services" },
-    { text: "Blogs", href: "/pages/Blogs" },
+    { text: "Blogs", href: "/pages/HeaderBlog" },
     { text: "Contact Us", href: "/pages/Contact" },
   ];
 

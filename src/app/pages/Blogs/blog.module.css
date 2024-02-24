@@ -46,14 +46,43 @@
   --mletterSpace18: 0.4266666666666667vw;
 }
 
-.container{
-    padding: 0 16.534391534391535vw;
-    margin-top: var(--margin100);
+.lodingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--margin100);
 }
 
-.blogImg{
-    width: 66.93121693121694vw;
-    height: 39.682539682539684vw;
-    object-fit: cover;
-    margin: var(--margin70) 0;
+.container {
+  padding: 0 16.534391534391535vw;
+  margin-top: var(--margin100);
+}
+
+.blogImage {
+  width: 66.93121693121694vw;
+  height: 39.682539682539684vw;
+  object-fit: cover;
+  margin: var(--margin70) 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: var(--mobileContainerPadding);
+    margin-top: calc(21.333333333333336vw + 21.333333333333336vw);
+  }
+
+  .container h2 {
+    text-align: left;
+  }
+
+  .container p {
+    text-align: left;
+  }
+
+  .blogImage {
+    height: 73.33333333333333vw;
+    width: 87.2vw;
+    margin-top: 4vw;
+    margin-bottom: 2.666666666666667vw;
+  }
 }

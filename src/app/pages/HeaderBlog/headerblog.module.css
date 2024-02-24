@@ -46,84 +46,54 @@
   --mletterSpace18: 0.4266666666666667vw;
 }
 
+.lodingContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--margin100);
+}
+
 .container {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  z-index: 0;
-  top: 0;
-}
-
-.nav {
   padding: var(--containerPadding);
+  margin-top: var(--margin100);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 100%;
-  height: 6.283068783068783vw;
-  border-bottom: 1px solid #fff;
-  position: relative;
-  z-index: 1;
+  gap: 3.968253968253968vw;
 }
 
-.logoContainer {
-  position: relative;
+.blogImage {
+  width: 41.4021164021164vw;
+  height: 34.78835978835979vw;
 }
 
-.nav h3 {
-  font-size: var(--font18);
-  line-height: var(--lineHeight18);
-  letter-spacing: var(--letterSpace18);
-  color: #cad5da;
+.container p {
+  margin-top: var(--margin20);
+  height: 9vw;
+  overflow: hidden;
 }
-
-.white {
-  width: 100%;
-  height: 6.283068783068783vw;
-  position: absolute;
-  background-color: #acb7bc;
-  transform: translate(-100%, 0);
-  z-index: -1;
-}
-
-.count {
-  position: absolute;
-  right: 6.613756613756613vw;
-  bottom: 6.613756613756613vw;
-  font-size: 26.455026455026452vw;
-  line-height: 75%;
-  letter-spacing: 0.1px;
-  letter-spacing: 0.8;
-  color: #cad5da;
-}
-
-.child {
-  opacity: 0;
-}
-
 
 @media only screen and (max-width: 767px) {
-  .nav{
-    height: 21.333333333333336vw;
+  .container {
     padding: var(--mobileContainerPadding);
+    margin-top: calc(21.333333333333336vw + 21.333333333333336vw);
+    flex-direction: column;
   }
 
-  .white{
-    height: 21.333333333333336vw;
+  .container h2{
+    text-align: left;
   }
 
-  .nav h3 {
-    font-size: var(--mfont12);
-    line-height: var(--mlineHeight12);
-    letter-spacing: var(--mletterSpace12);
-    color: #cad5da;
-    width: 35%;
+  .container p{
+    text-align: left;
+    height: 27.200000000000003vw;
+    margin-top: 2.666666666666667vw;
+    margin-bottom: var(--margin20);
   }
 
-  .count{
-    font-size: 26.666666666666668vw;
-    right: 10vw;
-    bottom: 10vw;
+  .blogImage {
+    height: 73.33333333333333vw;
+    width: 87.2vw;
+    margin-top: 4vw;
+    margin-bottom: 2.666666666666667vw;
   }
 }

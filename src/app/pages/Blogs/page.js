@@ -56,7 +56,7 @@ const Page = () => {
 
           <SectionDescription sectionText={dataArray.description} />
         </div>
-        <Container7 />
+        <Container7 blogPage={true} />
         <Contact />
         <Footer />
       </>
@@ -67,7 +67,7 @@ const Page = () => {
     <>
       <Header />
       <MobileHeader />
-      <div className={styles.container}>
+      <div className={styles.lodingContainer}>
         <h2 className="businessDesc">Loading...</h2>
       </div>
     </>

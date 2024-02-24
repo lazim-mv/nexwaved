@@ -8,8 +8,9 @@ import { useWindowSize } from "@/app/utils/windowSize";
 import fetchDataAndExport, { urlFor } from "@/app/api/blog";
 import Link from "next/link";
 
-const Container7 = () => {
-  const cardData = container7Data.cardData;
+const Container7 = ({ header, blogPage }) => {
+  // const cardData = container7Data.cardData;
+  const { windowSize, isSmallScreen } = useWindowSize();
 
   const [blogData, setBlogData] = useState([]);
 
@@ -28,15 +29,20 @@ const Container7 = () => {
     fetchData();
   }, []);
 
-  console.log(blogData, "blogss");
-
-  const { windowSize, isSmallScreen } = useWindowSize();
   return (
     <div className={styles.container}>
       <SectionName sectionText={container7Data.sectionName} />
       <div className={styles.tittle}>
-        <SectionTitle sectionText={container7Data.sectionTitle} />
-        {!isSmallScreen && (
+        <SectionTitle
+          sectionText={
+            blogPage
+              ? "Related Insights"
+              : header
+              ? ""
+              : container7Data.sectionTitle
+          }
+        />
+        {!isSmallScreen && !header && (
           <BtnComponent
             buttonText={container7Data.btnText}
             borderColor="rgba(255, 255, 255, 0.6)"
@@ -46,10 +52,21 @@ const Container7 = () => {
           />
         )}
       </div>
-      <div className={styles.cards}>
+      <div
+        className={styles.cards}
+        style={{
+          flexDirection: isSmallScreen && header ? "column" : "",
+        }}
+      >
         {blogData.map((data, index) => (
           <div className={styles.card} key={index}>
-            <div className={styles.imgContainer}>
+            <div
+              className={styles.imgContainer}
+              style={{
+                width: isSmallScreen && header && "87.2vw",
+                height: isSmallScreen && header && "73.33333333333333vw",
+              }}
+            >
               <Image
                 unoptimized
                 src={urlFor(data.titleImage).url()}
@@ -69,13 +86,13 @@ const Container7 = () => {
                 target="_blank"
                 onClick={() => console.log("Link clicked:")}
               >
-                {container7Data.btnText}
+                {container7Data.btnText1}
               </Link>
             </div>
           </div>
         ))}
       </div>
-      {isSmallScreen && (
+      {isSmallScreen && !header && (
         <div className={styles.btnCenter}>
           <BtnComponent
             buttonText={container7Data.btnText}
