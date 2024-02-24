@@ -20,6 +20,7 @@ import LoadingAnimation from "./components/LoadingAnimation/LoadingAnimation";
 export default function Home() {
   return (
     <>
+      {/* <LoadingAnimation /> */}
       <LoadingAnimation>
         <div>
           <Header />

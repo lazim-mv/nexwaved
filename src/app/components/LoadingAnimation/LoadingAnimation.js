@@ -7,7 +7,7 @@ import gsap from "gsap";
 
 const LoadingAnimation = ({ children }) => {
   const [count, setCount] = useState(0);
-  const totalTime = 3000;
+  const totalTime = 2500;
   const startTime = Date.now();
 
   useEffect(() => {
@@ -36,33 +36,49 @@ const LoadingAnimation = ({ children }) => {
     tl.to(".loadinganimation_white__Xk2Zb", {
       x: 0,
       width: "100vw",
-      duration: 3,
+      duration: 2.5,
       ease: "power2.inOut",
+      onUpdate: () => {
+        
+        gsap.to(".loadinganimation_logoContainer__D2L9v img", {
+            filter: "brightness(0)",
+            duration: 0,
+            ease: "power2.inOut",
+            delay: 0.6,
+        });
+        gsap.to(".loadinganimation_nav__AXHYk h3", {
+            color: "#000",
+            duration: 0,
+            ease: "power2.inOut",
+            delay: 1.5,
+        });
+      },
       onComplete: () => {
-        // Animation for .nav after .loadinganimation_white__Xk2Zb is complete
         gsap.to(".loadinganimation_nav__AXHYk", {
           y: "-100%",
-          duration: 1,
+          duration: .6,
           ease: "power2.inOut",
         });
         gsap.to(".loadinganimation_white__Xk2Zb", {
           y: "-100%",
-          duration: 1,
+          duration: .6,
           ease: "power2.inOut",
         });
         gsap.to(".loadinganimation_count__IogK3", {
-          y: "110%",
-          duration: 1,
+          y: "150%",
+          duration: .6,
           ease: "power2.inOut",
         });
         gsap.to(".loadinganimation_container__qQ6yo", {
           opacity: 0,
-          duration: 1,
+          duration: 0.3,
+          delay:0.5,
           ease: "power2.inOut",
         });
         gsap.to(".loadinganimation_child__1qOTU", {
           opacity: 1,
-          duration: 1,
+          duration: 0.3,
+          delay:0.5,
           ease: "power2.inOut",
         });
       },
