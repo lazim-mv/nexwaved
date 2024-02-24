@@ -72,13 +72,13 @@ const LoadingAnimation = ({ children }) => {
         gsap.to(".loadinganimation_container__qQ6yo", {
           opacity: 0,
           duration: 0.3,
-          delay:0.5,
+          delay:0.4,
           ease: "power2.inOut",
         });
         gsap.to(".loadinganimation_child__1qOTU", {
           opacity: 1,
           duration: 0.3,
-          delay:0.5,
+          delay:0.4,
           ease: "power2.inOut",
         });
       },
