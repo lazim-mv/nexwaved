@@ -88,6 +88,7 @@
 .arrow {
   height: 1.6494708994708995vw;
   width: 1.6494708994708995vw;
+  z-index: 0;
 }
 
 .serviceImgContainer {

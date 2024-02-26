@@ -14,10 +14,13 @@ import MobileHeader from "./components/MobileHeader/MobileHeader";
 import { useEffect } from "react";
 import RevealAffect from "./components/GsapComponents/RevealAffect";
 import LoadingAnimation from "./components/LoadingAnimation/LoadingAnimation";
+import { useWindowSize } from "@react-hook/window-size";
 // import { isIOS } from "./utils/iosCheck";
 // import { BtnComponent } from "./components/ButtonComponent";
 
 export default function Home() {
+  const { windowSize, isSmallScreen } = useWindowSize();
+
   return (
     <>
       {/* <LoadingAnimation /> */}

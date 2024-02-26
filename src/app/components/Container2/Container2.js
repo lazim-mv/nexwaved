@@ -67,7 +67,7 @@ const Container2 = () => {
                 height={0}
                 alt="ImageClients"
                 className={styles.arrow}
-                onClick={() => handleClick(index)}
+                // onClick={() => handleClick(index)}
                 style={{
                   transform: answerVisible[index]
                     ? "rotate(180deg)"

@@ -23,10 +23,10 @@ function MobileHeader() {
 
   const menuList = [
     { text: "Home", href: "/" },
-    { text: "About Us", href: "/pages/About" },
-    { text: "Services", href: "/pages/Services" },
-    { text: "Blogs", href: "/pages/HeaderBlog" },
-    { text: "Contact Us", href: "/pages/Contact" },
+    { text: "About Us", href: "/pages/About/" },
+    { text: "Services", href: "/pages/Services/" },
+    { text: "Blog", href: "/pages/HeaderBlog/" },
+    { text: "Contact Us", href: "/pages/Contact/" },
   ];
 
   return (

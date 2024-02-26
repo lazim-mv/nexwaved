@@ -3,7 +3,6 @@ import React, { useState, useEffect, useLayoutEffect } from "react";
 import styles from "./hero.module.css";
 import { BtnComponent, SectionDescription } from "../ButtonComponent";
 import { heroData } from "../../Content/content";
-import { useWindowSize } from "@/app/utils/windowSize";
 import New from "../LogoSlider/New";
 
 const Hero = () => {
@@ -23,7 +22,6 @@ const Hero = () => {
   
     return () => clearInterval(interval);
   }, []);
-  const { windowSize, isSmallScreen } = useWindowSize();
 
   return (
     <>

@@ -65,7 +65,7 @@ const Page = () => {
                 pathname: "/pages/Blogs",
                 search: `?search=${JSON.stringify(blogData)}`,
               }}
-              target="_blank"
+              // target="_blank"
               onClick={() => console.log("Link clicked:")}
             >
               <BtnComponent

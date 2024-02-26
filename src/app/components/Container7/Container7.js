@@ -79,11 +79,6 @@ const Container7 = ({ header, blogPage }) => {
                 style={{
                   width: (isSmallScreen && header) || (isSmallScreen && blogPage) ? "87.2vw" : "",
                   height: (isSmallScreen && header) || (isSmallScreen && blogPage) ? "73.33333333333333vw" : "",
-
-                  // width: isSmallScreen && header && "87.2vw",
-                  // height: isSmallScreen && header && "73.33333333333333vw",
-                  // width: isSmallScreen && blogPage && "87.2vw",
-                  // height: isSmallScreen && blogPage && "73.33333333333333vw",
                 }}
               >
                 <Image
