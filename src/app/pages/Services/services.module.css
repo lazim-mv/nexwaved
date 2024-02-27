@@ -66,7 +66,8 @@
 }
 
 .container h2 {
-  width: 60.317460317460316vw;
+  width: 58.317460317460316vw;
+  text-align: center;
 }
 
 .container p {
@@ -86,6 +87,10 @@
   display: flex;
   gap: var(--gap20);
   justify-content: center;
+}
+
+.button h5{
+  white-space: nowrap;
 }
 
 .cards {

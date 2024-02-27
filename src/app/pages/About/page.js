@@ -22,7 +22,9 @@ const page = () => {
       <MobileHeader />
       <RevealAffect>
         <div className={`${styles.container} `}>
-          <SectionTitle sectionText={container1.sectionTitle} />
+          <SectionTitle
+            sectionText={container1.sectionTitle}
+          />
           <Image
             unoptimized
             src={container1.img}
