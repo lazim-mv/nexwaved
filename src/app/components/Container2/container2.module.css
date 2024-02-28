@@ -131,6 +131,7 @@
     padding: 4vw;
     /* height: 14.666666666666666vw; */
     transition: all 0.6s ease;
+    cursor: default;
   }
 
   .arrow {
