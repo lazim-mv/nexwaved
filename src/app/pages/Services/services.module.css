@@ -218,7 +218,7 @@
   }
 
   .serviceImg {
-    height: 150%;
+    height: 100%;
     width: 100%;
     margin-bottom: 4vw;
     object-fit: cover;
