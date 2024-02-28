@@ -80,7 +80,7 @@
 .container2 {
   padding: var(--containerPadding);
   margin-top: 3.3068783068783065vw;
-  padding-bottom: var(--containerMarginTop);
+  padding-bottom: var(--margin100);
 }
 
 .button {

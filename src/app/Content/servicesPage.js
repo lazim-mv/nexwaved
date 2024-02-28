@@ -42,7 +42,7 @@ const container2 = {
     {
       id: "DataAi",
       btnText: "Data & AI",
-      img: "/ServicePage/nexwave/2.png",
+      img: "/ServicePage/nexwave/5.png",
       sectionTitle: "Data & AI",
       description1:
         "At Nexwave, we're at the forefront of integrating artificial intelligence and data analytics to improve processes, decision-making, and user experiences. We pioneer AI-driven solutions that push the boundaries of digital interaction and set new standards in user experience design.",

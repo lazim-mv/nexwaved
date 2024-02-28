@@ -29,7 +29,7 @@ const heroData = {
 };
 
 const container1Data = {
-  img: "/Container1/1.png",
+  img: "/Container1/2.png",
   btnText: "About Us",
   description1:
     "At the heart of our philosophy lies the belief that a brand's essence and user experience (UX) are intrinsically linked, forming the cornerstone of digital identity. Our dedicated team excels in shaping and projecting digital brand identities across various platforms, offering strategic support and guidelines to ensure seamless consistency. ",
@@ -71,7 +71,7 @@ const container2Data = {
     },
     {
       cardHeading: "Data & AI",
-      img: "/Container2/1.png",
+      img: "/Container2/5.png",
       description:
         "Leverage the power of data and AI to gain a competitive edge. Our expertise in AI integration and data analytics transforms your processes, making your digital products smarter and more user-centric.",
     },
