@@ -377,6 +377,7 @@ a {
     /* width: 34.66666666666667vw !important; */
     height: 9.866666666666667vw !important;
     border-radius: 9.866666666666667vw;
+    cursor: default;
   }
 
   .btnContainer::before {
