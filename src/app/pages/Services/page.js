@@ -77,7 +77,7 @@ const Page = () => {
                     <Image
                       // ref={(ref) => (cardImg.current[index] = ref)}
                       unoptimized
-                      src={data.img}
+                      src={isSmallScreen ? data.mImg : data.img}
                       priority={true}
                       width={100}
                       height={0}

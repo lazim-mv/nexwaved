@@ -1,6 +1,7 @@
 const container1 = {
   sectionTitle: "We Accelerate Growth Through Digital Marketing Solutions",
   img: "/AboutPage/1.png",
+  mImg: "/AboutPage/1m.png",
   description1:
     "At Nexwave, we're passionate about empowering businesses like yours to thrive in today's dynamic digital landscape. We are a full-service digital marketing agency dedicated to crafting digital experiences that propel your brand forward and amplify your online voice.",
   description2:
@@ -9,6 +10,7 @@ const container1 = {
 
 const container2 = {
   img: "/AboutPage/2.png",
+  mImg: "/AboutPage/2m.png",
   vision: {
     sectionTitle: "Our Vision",
     description:

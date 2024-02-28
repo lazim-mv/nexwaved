@@ -30,6 +30,7 @@ const heroData = {
 
 const container1Data = {
   img: "/Container1/2.png",
+  mImg: "/Container1/1m.png",
   btnText: "About Us",
   description1:
     "At the heart of our philosophy lies the belief that a brand's essence and user experience (UX) are intrinsically linked, forming the cornerstone of digital identity. Our dedicated team excels in shaping and projecting digital brand identities across various platforms, offering strategic support and guidelines to ensure seamless consistency. ",

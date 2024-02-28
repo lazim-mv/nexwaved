@@ -14,20 +14,21 @@ import {
 import Contact from "@/app/components/Contact/Contact";
 import Footer from "@/app/components/Footer/Footer";
 import RevealAffect from "@/app/components/GsapComponents/RevealAffect";
+import { useWindowSize } from "@/app/utils/windowSize";
 
-const page = () => {
+const Page = () => {
+  const { windowSize, isSmallScreen } = useWindowSize();
+
   return (
     <>
       <Header />
       <MobileHeader />
       <RevealAffect>
         <div className={`${styles.container} `}>
-          <SectionTitle
-            sectionText={container1.sectionTitle}
-          />
+          <SectionTitle sectionText={container1.sectionTitle} />
           <Image
             unoptimized
-            src={container1.img}
+            src={isSmallScreen ? container1.mImg : container1.img}
             width={100}
             height={0}
             alt="ImageClients"
@@ -69,7 +70,7 @@ const page = () => {
           <div className={styles.imgContainer}>
             <Image
               unoptimized
-              src={container2.img}
+              src={isSmallScreen ? container2.mImg : container2.img}
               width={100}
               height={0}
               alt="ImageClients"
@@ -106,4 +107,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

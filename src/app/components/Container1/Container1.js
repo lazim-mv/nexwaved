@@ -10,19 +10,11 @@ import { setupScrollReveal } from "@/app/utils/revealAnimation";
 const Container1 = () => {
   const { windowSize, isSmallScreen } = useWindowSize();
 
-  // useEffect(() => {
-  //   const cleanupScroll = setupScrollReveal();
-
-  //   return () => {
-  //     cleanupScroll();
-  //   };
-  // }, []);
-
   return (
     <div className={`${styles.container} `}>
       <Image
         unoptimized
-        src={container1Data.img}
+        src={isSmallScreen ? container1Data.mImg: container1Data.img}
         width={100}
         height={0}
         alt="ImageClients"
