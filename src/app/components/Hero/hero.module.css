@@ -28,6 +28,10 @@
   height: 17.857142857142858vw;
 }
 
+.animatedText{
+  height: auto;
+}
+
 .notAnimatedText {
   height: 11.857143vw;
 }
@@ -56,9 +60,24 @@
 
   .container1 h1 {
     width: auto;
-    position: relative;
-    height: 40.53333333333333vw;
+    /* position: relative; */
     font-weight: 400;
+  }
+  
+  .bothTexts {
+    height: 41.53333333333333vw;
+    position: relative;
+  }
+  
+  .animatedText{
+    height: auto;
+    position: absolute !important;
+    bottom: 0;
+    white-space: nowrap;
+  }
+  
+  .notAnimatedText {
+    height: 11.857143vw;
   }
 
   .container1 p {
