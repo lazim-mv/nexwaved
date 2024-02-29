@@ -11,6 +11,7 @@ const ServiceImageAffect = ({
   className,
   height,
   width,
+  translateValue
 }) => {
   const trigger = useRef();
   const target = useRef();
@@ -20,8 +21,9 @@ const ServiceImageAffect = ({
   const [windowWidth, windowHeight] = useWindowSize();
 
   useEffect(() => {
-    const y = windowHeight * speed * 0.1;
-    const setY = gsap.quickSetter(target.current, "y", "px");
+    const startY = 100;
+    const endY = 50;
+    const yRange = startY - endY;
 
     const timeline = gsap.timeline({
       scrollTrigger: {
@@ -30,9 +32,9 @@ const ServiceImageAffect = ({
         scrub: true,
         start: "top bottom",
         end: "bottom top",
-        // markers: true,
         onUpdate: (e) => {
-          setY((1 - e.progress) * y);
+          const newY = endY + e.progress * yRange;
+          gsap.set(target.current, { y: newY });
         },
       },
     });

@@ -68,24 +68,24 @@ const Page = () => {
           {container2.cardData.map((data, index) => (
             <div className={styles.card} key={index} id={data.id}>
               <div className={styles.serviceImgContainer}>
-                <RevealAffect>
-                  <ServiceImageAffect
-                    speed={isSmallScreen ? 0.8 : 1.2}
-                    height={isSmallScreen ? "80vw" : "auto"}
-                    width={isSmallScreen ? "87.2vw" : "auto"}
-                  >
-                    <Image
-                      // ref={(ref) => (cardImg.current[index] = ref)}
-                      unoptimized
-                      src={isSmallScreen ? data.mImg : data.img}
-                      priority={true}
-                      width={100}
-                      height={0}
-                      alt="ImageClients"
-                      className={styles.serviceImg}
-                    />
-                  </ServiceImageAffect>
-                </RevealAffect>
+                {/* <RevealAffect> */}
+                <ServiceImageAffect
+                  speed={isSmallScreen ? 0.008 : 1.2}
+                  height={isSmallScreen ? "auto" : "auto"}
+                  width={isSmallScreen ? "87.2vw" : "auto"}
+                >
+                  <Image
+                    // ref={(ref) => (cardImg.current[index] = ref)}
+                    unoptimized
+                    src={isSmallScreen ? data.mImg : data.img}
+                    priority={true}
+                    width={100}
+                    height={0}
+                    alt="ImageClients"
+                    className={styles.serviceImg}
+                  />
+                </ServiceImageAffect>
+                {/* </RevealAffect> */}
               </div>
               <SectionTitle sectionText={data.sectionTitle} />
               <div className={styles.descContainer}>
