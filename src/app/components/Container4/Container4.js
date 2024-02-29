@@ -15,8 +15,10 @@ const Container4 = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.splineObject}>
-        <Spline scene="https://prod.spline.design/eaoXum74o6-cbhF4/scene.splinecode" />
+      <div className={styles.widthAdjust}>
+        <div className={styles.splineObject}>
+          <Spline scene="https://prod.spline.design/eaoXum74o6-cbhF4/scene.splinecode" />
+        </div>
       </div>
       <div className={styles.content}>
         <SectionTitle

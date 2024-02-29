@@ -44,7 +44,7 @@
 }
 
 .container {
-  padding: 6.613756613756613vw;
+  padding: 5.52010582010582vw 6.613756613756613vw;
   background: var(--bgColor);
   display: flex;
   gap: 2vw;
@@ -55,10 +55,15 @@
   z-index: 1;
 }
 
-.splineObject {
+.widthAdjust{
   width: 45vw;
-  height: 35vw;
-  border-radius: 35vw;
+
+}
+
+.splineObject {
+  width: 40vw;
+  height: 40vw;
+  border-radius: 40vw;
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
@@ -88,9 +93,14 @@
     gap: 8vw;
   }
 
+  .widthAdjust{
+    width: auto;
+  }
+
   .splineObject{
     width: 87.2vw;
     height: 87.2vw;
+    border-radius: 87.2vw;
   }
 
   .content {

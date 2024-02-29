@@ -38,9 +38,9 @@ export default function Home() {
           <RevealAffect>
             <Container3 />
           </RevealAffect>
-          {/* <RevealAffect>
+          <RevealAffect>
             <Container4 />
-          </RevealAffect> */}
+          </RevealAffect>
           <RevealAffect>
             <Container5 />
           </RevealAffect>
