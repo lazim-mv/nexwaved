@@ -117,7 +117,8 @@
   .cards {
     margin-top: 8vw;
     gap: 4vw;
-    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: scroll;
     width: 100%;
   }
 
