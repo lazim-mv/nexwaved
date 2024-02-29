@@ -295,6 +295,10 @@ a {
   }
 }
 
+.gsapTextStagger{
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 767px) {
   h1 {
     font-size: 8.533333333333333vw;

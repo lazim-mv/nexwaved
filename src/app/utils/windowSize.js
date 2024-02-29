@@ -6,7 +6,7 @@ function useWindowSize() {
     height: undefined,
   });
 
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
 
   useLayoutEffect(() => {
     // Handler to call on window resize

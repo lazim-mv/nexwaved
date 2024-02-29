@@ -145,7 +145,7 @@ const container5Data = {
     },
     {
       img: "/Container5/nexwave/3.png",
-      cardHeading: "petbey",
+      cardHeading: "Petbey",
       btnText: "Branding",
     },
     {
