@@ -134,6 +134,7 @@
     font-size: var(--mfont12);
     line-height: var(--mlineHeight12);
     letter-spacing: var(--mletterSpace12);
+    height: 40.53333333333333vw;
   }
 
   .profile {
@@ -145,6 +146,11 @@
     display: grid;
     grid-template-columns: 13.333333333333334vw auto;
     margin-bottom:8vw ;
+    height: 13.333333333333334vw;
+  }
+
+  .nameAndCompany{
+    height: 13.333333333333334vw;
   }
 
   .profile h6 {

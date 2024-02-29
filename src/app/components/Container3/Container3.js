@@ -81,7 +81,7 @@ const Container3 = () => {
                 alt="ImageClients"
                 className={styles.profileImg}
               />
-              <div>
+              <div className={styles.nameAndCompany}>
                 <h6>{data.name}</h6>
                 <p>{data.company}</p>
               </div>

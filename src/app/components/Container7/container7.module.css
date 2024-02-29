@@ -132,6 +132,11 @@
     padding-right: 0;
   }
 
+  .container h4{
+    display: inline-block;
+    width: 87.2vw;
+  }
+
   .tittle {
     display: flex;
     justify-content: space-between;
