@@ -23,7 +23,7 @@ const ServiceImageAffect = ({
   useEffect(() => {
     const startY = 100;
     const endY = 50;
-    const yRange = startY - endY;
+    const yRange = startY - endY + speed;
 
     const timeline = gsap.timeline({
       scrollTrigger: {
