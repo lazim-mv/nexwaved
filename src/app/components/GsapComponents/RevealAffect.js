@@ -62,7 +62,6 @@ const RevealAffect = ({
       <div
         ref={target}
         style={{
-          transform: "translateY(00%)",
           opacity: 0,
           height: height,
           width: width,
