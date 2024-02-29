@@ -134,23 +134,23 @@ const container5Data = {
   btnText: "All Work",
   cardData: [
     {
-      img: "/Container5/1.png",
-      cardHeading: "Package Design",
+      img: "/Container5/nexwave/1.png",
+      cardHeading: "Beacon",
       btnText: "Branding",
     },
     {
-      img: "/Container5/2.png",
-      cardHeading: "Brochure Design",
+      img: "/Container5/nexwave/2.png",
+      cardHeading: "Gisco",
       btnText: "Branding",
     },
     {
-      img: "/Container5/3.png",
-      cardHeading: "Package Design",
+      img: "/Container5/nexwave/3.png",
+      cardHeading: "petbey",
       btnText: "Branding",
     },
     {
-      img: "/Container5/4.png",
-      cardHeading: "Brochure Design",
+      img: "/Container5/nexwave/4.png",
+      cardHeading: "Noorjes",
       btnText: "Branding",
     },
   ],
