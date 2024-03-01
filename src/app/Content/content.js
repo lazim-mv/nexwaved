@@ -136,22 +136,22 @@ const container5Data = {
     {
       img: "/Container5/nexwave/1.png",
       cardHeading: "Beacon",
-      btnText: "Branding",
+      btnText: "Website",
     },
     {
       img: "/Container5/nexwave/2.png",
       cardHeading: "Gisco",
-      btnText: "Branding",
+      btnText: "Website",
     },
     {
       img: "/Container5/nexwave/3.png",
       cardHeading: "Petbey",
-      btnText: "Branding",
+      btnText: "Mobile App",
     },
     {
-      img: "/Container5/nexwave/4.png",
-      cardHeading: "Noorjes",
-      btnText: "Branding",
+      img: "/Container5/nexwave/5.png",
+      cardHeading: "Hyperama",
+      btnText: "Ecommerce",
     },
   ],
 };

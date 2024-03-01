@@ -41,9 +41,9 @@
   --mlineHeight14: 5.226666666666667vw;
   --mletterSpace14: 0.4266666666666667vw;
 
-  --mfont18:4.8vw;
-  --mlineHeight18:5.624vw;
-  --mletterSpace18:0.4266666666666667vw;
+  --mfont18: 4.8vw;
+  --mlineHeight18: 5.624vw;
+  --mletterSpace18: 0.4266666666666667vw;
 }
 .container {
   padding: var(--containerPadding);
@@ -97,6 +97,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.cardHeadingAndButton div:hover {
+  border: 0.06613756613756613vw solid rgba(255, 255, 255, 0.6) !important;
+}
+
+.cardHeadingAndButton div::before {
+  background: #12171c;
 }
 
 .cardHeadingAndButton h6 {

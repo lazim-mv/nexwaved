@@ -39,10 +39,10 @@ const Container5 = () => {
               <h6>{data.cardHeading}</h6>
               <BtnComponent
                 buttonText={data.btnText}
-                // borderColor="rgba(255, 255, 255, 0.6)"
-                bg="#2b61f7"
+                borderColor="rgba(255, 255, 255, 0.6)"
+                bg="#12171c"
                 color="#fff"
-                width={isSmallScreen ? "29.333333333333332vw" : "8.862433862433862vw"}
+                // width={isSmallScreen ? "29.333333333333332vw" : "8.862433862433862vw"}
                 height="2.976190476190476vw"
                 arrow={true}
               />
