@@ -135,17 +135,17 @@ const container5Data = {
   cardData: [
     {
       img: "/Container5/nexwave/1.png",
-      cardHeading: "Beacon",
+      cardHeading: "Beacon Management Consultants",
       btnText: "Website",
     },
     {
       img: "/Container5/nexwave/2.png",
-      cardHeading: "Gisco",
+      cardHeading: "Gisco Contracting Company",
       btnText: "Website",
     },
     {
       img: "/Container5/nexwave/3.png",
-      cardHeading: "Petbey",
+      cardHeading: "Petbey App",
       btnText: "Mobile App",
     },
     {
