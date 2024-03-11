@@ -11,7 +11,7 @@ const HeroText = ({ texts }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 2500);
+    }, 3500);
 
     return () => clearInterval(interval);
   }, [texts]);

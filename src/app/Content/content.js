@@ -1,10 +1,10 @@
 const heroData = {
-  sectionTitle:
-    "We Empower Your Business with Top-notch Branding and Smart Technology",
+  sectionTitle: "We Empower Your Business with Top-notch Branding and",
   btnText: "Our Services",
   description:
     "At Nexwave Digital, we're passionate about unlocking the true potential of your brand. Our expert blend of modern design and advanced technology creates digital experiences that don't just leave a lasting impression—they set new benchmarks for excellence. Let us show you how simplicity and innovation can elevate your brand to new heights.",
   texts: [
+    "Smart Technology",
     "Elevating Interactions",
     "Empowering Innovation",
     "Transforming Experiences",

@@ -25,7 +25,7 @@
 }
 
 .bothTexts {
-  height: 22.857142857142858vw;
+  height: 17.857142857142858vw;
 }
 
 .animatedText{
@@ -33,13 +33,12 @@
 }
 
 .notAnimatedText {
-  height: 23vw;
+  height: 11.857143vw;
 }
 
 .container1 span {
   position: absolute;
   left: -0.06613756613756613vw;
-  bottom: 0;
   opacity: 0;
   transition: all 0.25s ease-in;
 }
@@ -66,7 +65,7 @@
   }
   
   .bothTexts {
-    height: 50.53333333333333vw;
+    height: 41.53333333333333vw;
     position: relative;
   }
   
