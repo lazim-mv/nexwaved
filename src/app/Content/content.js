@@ -1,13 +1,14 @@
 const heroData = {
-  sectionTitle: "We're a global UI UX design agency curating experiences",
+  sectionTitle:
+    "We Empower Your Business with Top-notch Branding and Smart Technology",
   btnText: "Our Services",
   description:
-    "Nexwave is your Partner in Digital Excellence, Empowering Your Brand with Cutting-Edge Design and Technology to Forge Unforgettable Digital Experiences",
+    "At Nexwave Digital, we're passionate about unlocking the true potential of your brand. Our expert blend of modern design and advanced technology creates digital experiences that don't just leave a lasting impression—they set new benchmarks for excellence. Let us show you how simplicity and innovation can elevate your brand to new heights.",
   texts: [
-    "scale businesses",
-    "transform lives",
-    "drive innovation",
-    "deliver impact",
+    "Elevating Interactions",
+    "Empowering Innovation",
+    "Transforming Experiences",
+    "Driving Success",
   ],
   brandLogos: [
     "/newBrands/1.png",

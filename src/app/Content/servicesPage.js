@@ -12,7 +12,7 @@ const container2 = {
       mImg: "/ServicePage/nexwave/1m.png",
       sectionTitle: "Digital Strategy",
       description1:
-        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!",
+        "We dive deep into market research to tailor online strategies that align perfectly with your goals. Our focus is on engaging your audience, enhancing brand visibility, and boosting conversions. Our strategic approach ensures impactful results and lays the groundwork for your long-term success.",
     },
     {
       id: "Designing",
@@ -32,7 +32,7 @@ const container2 = {
       description1:
         "From web and mobile applications to sophisticated software solutions, our team of developers combines technical prowess with creative insights to deliver high-performance, scalable, and user-friendly products. We ensure your product not only meet but exceed user expectations.",
     },
-    
+
     {
       id: "Marketing",
       btnText: "Marketing & Growth",
@@ -42,7 +42,7 @@ const container2 = {
       description1:
         "Using the latest digital marketing techniques and analytics, we craft and execute campaigns that captivate, engage, and convert. From SEO and content marketing to social media and PPC campaigns, we fuel your brand's growth in the digital era.",
     },
-    
+
     {
       id: "DataAi",
       btnText: "Data & AI",
