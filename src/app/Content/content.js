@@ -6,7 +6,7 @@ const heroData = {
   texts: [
     "Smart Technology",
     "Elevating Interactions",
-    "Empowering Innovation",
+    "Crafting impact",
     "Fostering Growth",
     "Driving Success",
   ],
