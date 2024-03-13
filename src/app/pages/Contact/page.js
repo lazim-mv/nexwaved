@@ -50,6 +50,11 @@ const page = () => {
                 <input type="checkbox" id="marketing" name="Marketing" />
                 Marketing
               </label>
+
+              <label htmlFor="dataAi">
+                <input type="checkbox" id="data&AI" name="Data&AI" />
+                Data & AI
+              </label>
             </div>
           </div>
           <div className={styles.textFields}>
