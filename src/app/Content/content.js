@@ -7,7 +7,7 @@ const heroData = {
     "Smart Technology",
     "Elevating Interactions",
     "Empowering Innovation",
-    "Transforming Experiences",
+    "Fostering Growth",
     "Driving Success",
   ],
   brandLogos: [
