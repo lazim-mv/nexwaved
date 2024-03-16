@@ -276,7 +276,7 @@ const contact = {
 
 const footer = {
   img: "/hLogo.svg",
-  copyRight: "© 2023 All Right Reserved | Powered by procube.cx",
+  copyRight: "© 2024 All Right Reserved | Powered by procube.cx",
   address: {
     heading: "Let’s Start a conversation",
     texts: [

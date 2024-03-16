@@ -45,7 +45,9 @@ const Footer = () => {
             className={styles.footerLogo}
           />
         </a>
-        <p>{footer.copyRight}</p>
+        <a href="https://procube.cx/">
+          <p>{footer.copyRight}</p>
+        </a>
       </div>
     </div>
   );
