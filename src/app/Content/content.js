@@ -232,34 +232,38 @@ const container8Data = {
   faqData: [
     {
       number: "01",
-      question: "What services do you offer for branding?",
+      question:
+        "What sets Nexwave Digital apart in the realm of branding and technology?",
       answer:
-        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+        "Nexwave Digital combines modern design with advanced technology to create unparalleled digital experiences, setting new benchmarks for excellence and elevating brands to new heights.",
       isAnswerVisible: true,
     },
     {
       number: "01",
-      question: "What services do you offer for branding?",
+      question:
+        "What services does Nexwave offer to enhance digital initiatives and brand visibility?",
       answer:
-        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+        "Nexwave offers a range of services including digital strategy, technology transformation, data & AI integration, development, design, and marketing & growth strategies tailored to maximize growth and drive conversions for impactful results in the digital arena.",
     },
     {
       number: "01",
-      question: "What services do you offer for branding?",
+      question:
+        "Can you provide examples of Nexwave's successful partnerships and client testimonials?",
       answer:
-        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+        "Testimonials highlight Nexwave's commitment to expanding clients' visions, revitalizing operations, and delivering exceptional digital solutions that exceed expectations, positioning clients ahead of the curve in the digital landscape.",
     },
     {
       number: "01",
-      question: "What services do you offer for branding?",
+      question: "What distinguishes Nexwave's approach to digital marketing?",
       answer:
-        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+        "Nexwave is a full-service digital marketing agency dedicated to crafting digital experiences that propel brands forward, amplifying online voices, and delivering measurable results that drive tangible growth in today's dynamic digital landscape.",
     },
     {
       number: "01",
-      question: "What services do you offer for branding?",
+      question:
+        "How does Nexwave leverage Artificial Intelligence to enhance digital solutions?",
       answer:
-        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+        "Nexwave harnesses the power of Artificial Intelligence to optimize processes, enhance user experiences, and pioneer new interaction paradigms, empowering digital products to be more intuitive, efficient, and engaging.",
     },
   ],
 };
