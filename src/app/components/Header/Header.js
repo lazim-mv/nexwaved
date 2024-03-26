@@ -59,7 +59,7 @@ function Header() {
               ))}
             </ul>
           </div>
-          <a href="/">
+          <a href="/pages/Contact">
             <BtnComponent
               buttonText="Get in Touch"
               borderColor="rgba(255, 255, 255, 0.6)"

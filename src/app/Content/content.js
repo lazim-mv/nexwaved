@@ -85,46 +85,46 @@ const container3Data = {
   sectionTitle: "Giving Us The Best Review",
   cardData: [
     {
-      name: "Courtney Henry",
-      company: "Johnson & Johnson",
+      name: "Ethan",
+      company: "Product Manager",
       img: "/Container3/1.png",
       description:
         "“When we sought a partner to refine our digital roadmap, Nexwave stood out. Their team didn't just align with our goals; they expanded our vision, offering strategic insights that positioned us ahead of the curve. It's rare to find a partner so committed to your success.”",
     },
     {
-      name: "Courtney Henry",
-      company: "Johnson & Johnson",
+      name: "Chloe",
+      company: "Designer",
       img: "/Container3/2.png",
       description:
         "“Nexwave’s expertise in implementing cutting-edge solutions revitalized our operations and prepared us for a digital-first future. The partnership has been a game-changer, enabling us to innovate faster and more efficiently.”",
     },
     {
-      name: "Courtney Henry",
-      company: "Johnson & Johnson",
+      name: "Oliver",
+      company: "Assistant Manager",
       img: "/Container3/3.png",
       description:
         "“Nexwave's development team transformed our concept into an exceptional, high-performing app. Their meticulous attention to detail and problem-solving excellence exceeded our expectations, delivering a product that went beyond functionality to truly stand out.”",
     },
     {
-      name: "Courtney Henry",
-      company: "Johnson & Johnson",
+      name: "Ethan",
+      company: "Product Manager",
       img: "/Container3/1.png",
       description:
-        "“The creativity and dedication of the Nexwave team have breathed new life into our brand and vision. The positive feedback from our leadership and team members has been overwhelming, underlining the success of our collaboration.”",
+        "“When we sought a partner to refine our digital roadmap, Nexwave stood out. Their team didn't just align with our goals; they expanded our vision, offering strategic insights that positioned us ahead of the curve. It's rare to find a partner so committed to your success.”",
     },
     {
-      name: "Courtney Henry",
-      company: "Johnson & Johnson",
+      name: "Chloe",
+      company: "Designer",
       img: "/Container3/2.png",
       description:
-        "“ What sets Nexwave apart is their collaborative approach. They don't just offer services; they engage deeply with our product's vision, enhancing and expanding our ideas into something truly remarkable.”",
+        "“Nexwave’s expertise in implementing cutting-edge solutions revitalized our operations and prepared us for a digital-first future. The partnership has been a game-changer, enabling us to innovate faster and more efficiently.”",
     },
     {
-      name: "Courtney Henry",
-      company: "Johnson & Johnson",
+      name: "Oliver",
+      company: "Assistant Manager",
       img: "/Container3/3.png",
       description:
-        "“When we sought a partner to refine our digital roadmap, Nexwave stood out. Their team didn't just align with our goals; they expanded our vision, offering strategic insights that positioned us ahead of the curve. It's rare to find a partner so committed to your success.”",
+        "“Nexwave's development team transformed our concept into an exceptional, high-performing app. Their meticulous attention to detail and problem-solving excellence exceeded our expectations, delivering a product that went beyond functionality to truly stand out.”",
     },
   ],
 };
@@ -280,8 +280,8 @@ const footer = {
   address: {
     heading: "Let’s Start a conversation",
     texts: [
-      "nexwave@gmail.com",
-      "+91 9645013281",
+      "inquire@nexwave.com",
+      "+1 (416) 824-4786",
       "North York, Toronto, Ontario M9L1N2",
     ],
   },
@@ -292,7 +292,7 @@ const footer = {
   },
   social: {
     heading: "Follow Us",
-    texts: ["Twitter", "Instagram", "Facebook", "Linked In", "Whatsapp"],
+    texts: ["Twitter", "Instagram", "Facebook", "LinkedIn", "Whatsapp"],
   },
 };
 

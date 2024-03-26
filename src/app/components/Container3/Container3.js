@@ -71,7 +71,7 @@ const Container3 = () => {
               } 0.8s ease`,
             }}
           >
-            <SectionDescription sectionText={data.description} />
+            <p className={styles.testimonialText}>{data.description} </p>
             <div className={styles.profile}>
               <Image
                 unoptimized
